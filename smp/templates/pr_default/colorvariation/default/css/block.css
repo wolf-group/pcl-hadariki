@@ -1,0 +1,241 @@
+/* 検索
+----------------------------------------------- */
+div#searcharea {
+    width: 95%;
+    margin: 5px auto;
+    padding: 0;
+    border: solid 1px #ccc;
+	text-align: center;
+	overflow:hidden;
+	clear:both;
+}
+div#searcharea p {
+	padding: 8px 0 0 0 
+}
+
+div#searcharea img {
+    padding: 0 5px 0 0;
+    vertical-align: bottom;
+}
+
+div#searcharea .btn {
+	text-align: center
+}
+
+#searcharea .box142 {
+    width: 290px;
+    height: 25px;
+    border: solid 1px #ccc;
+}
+
+#searcharea .box143 {
+    width: 160px;
+    height: 25px;
+    margin-top: 5px;
+    border: solid 1px #ccc;
+}
+
+/* カゴの中
+----------------------------------------------- */
+div#cartarea {
+    width: 95%;
+    margin: 5px auto;
+    padding: 0;
+    border: solid 1px #ccc;
+	text-align: center;
+	overflow:hidden;
+	clear:both;
+    word-break: break-all;
+}
+div#cartarea h2 {
+    margin: 0 auto;
+	padding:10px;
+	text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background:#535353;
+}
+div#cartarea p {
+    margin: 0;
+    padding: 5px 0 10px 0;
+}
+div#cartarea p.item {
+    margin: 0;
+    padding: 5px 0 10px 0;
+    border-bottom:1px dashed #2f2f2f;
+}
+div#cartarea .btn {
+    margin: 0;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+/* カテゴリー
+----------------------------------------------- */
+div#categoryarea {
+    width: 95%;
+    margin: 5px auto;
+    padding: 0;
+    border: solid 1px #ccc;
+	text-align: left;
+	overflow:hidden;
+	clear:both;
+}
+
+div#categoryarea h2 {
+    margin: 0 auto;
+	padding:10px;
+	text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background:#535353;
+}
+
+div#categoryarea li {
+    list-style: none;
+    font-family: HiraKakuProN-W6;
+    font-size: 14px;
+    line-height: 44px;
+}
+
+div#categoryarea li a {
+    display: block;
+    height: 43px;
+    padding: 0px 26px 0px 10px;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: black;
+    background: url("../img/top/listarrow.png") no-repeat 95% 50%;
+}
+
+div#categoryarea li.level1 {
+    font-weight: bold;
+    border-bottom: solid 1px #D9D9D9;
+}
+
+div#categoryarea li.level1 li { font-weight: normal }
+a.onlink { text-decoration: underline }
+a.onlink:link { color: #535353 }
+a.onlink:visited { color: #535353 }
+a.onlink:hover { color: #535353 }
+.cate_margin { margin-left: 10px }
+
+/* ログイン
+----------------------------------------------- */
+div#loginarea {
+    width: 95%;
+    margin: 5px auto;
+    padding: 0;
+    border: solid 1px #ccc;
+	text-align: center;
+	overflow:hidden;
+	clear:both;
+}
+div#loginarea h2 {
+    margin: 0 auto;
+	padding:10px;
+	text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background:#535353;
+}
+div#loginarea h3 {
+    text-align: left;
+    margin: 0;
+    padding: 5px;
+    font: 14px bold;
+    color:#2f2f2f;
+}
+div#loginarea p {
+    text-align: left;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+}
+
+div#loginarea .mem_area {
+    text-align: left;
+    margin: 0;
+    padding: 5px 0 0 0;
+    font-size: 12px;
+}
+
+div#loginarea .no_mem_area {
+    text-align: left;
+    margin: 0;
+    padding: 5px 0 0 0;
+    font-size: 12px;
+}
+
+#loginarea .box96 {
+    width: 240px;
+    height: 25px;
+    border: solid 1px #ccc;
+}
+.cate_margin {
+	margin-left: 10px 
+}
+.atention {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+	font-size: 10px;
+	color:red;
+}
+
+/* カレンダー
+----------------------------------------------- */
+#block-calendar {
+    width: 95%;
+    text-align: center;
+    margin: 5px auto 0px 5px;
+}
+#block-calendar table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+#block-calendar th,
+#block-calendar td {
+    padding: 4px;
+    border: 1px solid #CCCCCC;
+}
+#block-calendar th {
+    color: #FFFFFF;
+    background: #535353;
+}
+#block-calendar .off {
+    color: #ff0000;
+    background: #ebebeb;
+}
+#block-calendar caption { color: #DD4400;
+}
+
+/* イメージスライダー
+----------------------------------------------- */
+div#newitemarea {
+    width: 95%;
+    margin: 5px auto;
+    padding: 0;
+    border: solid 1px #ccc;
+	text-align: center;
+	overflow:hidden;
+	clear:both;
+word-break: break-all;
+}
+
+div#newitemarea h2 {
+    margin: 0 auto;
+	padding:10px;
+	text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background:#535353;
+}

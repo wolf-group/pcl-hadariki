@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* 下層共通指定
+----------------------------------------------- */
+div#listcolumn {
+    width: 100%;
+    margin: 10px auto 0 auto;
+}
+div#listcolumn h2.title {
+    width: 300px;
+    margin: 0 auto;
+    padding:10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background:#535353;
+}
+div#listcolumn h2.title a {
+    color: #ffffff;
+    text-decoration: none;
+}
+div#listcolumn h2.title a:hover {
+    text-decoration: underline;
+}
+
+
+div#listcolumn .seach_zero {
+    width: 300px;
+    margin: 10px 4px;
+    padding: 5px;
+    border: solid 1px #ccc;
+    text-align: left;
+}
+div#listcolumn table {
+    width: 310px;
+    margin: 5px 0;
+    padding: 0px 3px;
+}
+
+/* 商品一覧 */
+/* タイトル */
+div#listtitle {
+    width: 95%;
+    margin: 5px auto;
+    padding: 0px 0px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: HiraKakuProN-W3;
+}
+div#listtitle h2 {
+    margin:0;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background:#535353;
+}
+div#listtitle h2 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+div#listtitle h2 a:hover {
+    text-decoration: underline;
+}
+
+
+/* 商品 */
+div.listarea {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+    border: solid 1px #f3f3f3;
+    clear: both;
+}
+div.listarea2 {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+    border: solid 1px #f3f3f3;
+    background: #f3f3f3;
+    clear: both;
+}
+div.listarea ul li {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+div.listarea2 ul li {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+div.listarea .listphoto {
+    width: 29%;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    position: relative;
+}
+div.listarea .listphoto img {
+    width: 78px;
+    height: 78px;
+    margin: 0px;
+    padding: 5px;
+}
+div.listarea2 .listphoto {
+    width: 29%;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    position: relative;
+}
+div.listarea2 .listphoto img {
+    width: 78px;
+    height: 78px;
+    margin: 0px;
+    padding: 5px;
+}
+div.listrightblock {
+    float: left;
+    text-align: left;
+    width: 60%;
+    margin: 10px 2px 10px 20px;
+    padding: 0px;
+}
+div.listarea .listrightblock a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+div.listarea2 .listrightblock a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+div.listarea .listrightblock h3 {
+    margin: 0px;
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color:#000;
+}
+div.listarea2 .listrightblock h3 {
+    margin: 0px;
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color:#000;
+}
+div.listrightblock .listcomment {
+    width: 175px;
+    font-size: 10px;
+    line-height: 14px;
+    color: #000000;
+    font-weight: nomal;
+    margin: 5px 5px 5px 0px;
+}
+div.listrightblock .pricebox {
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    text-align: left;
+    margin: 5px 0px 5px 0px;
+}
+div.listrightblock p {
+    margin: 0;
+    padding: 0 0 5px 0px;
+    line-height: 16px;
+    color: #000000;
+}
+div.listrightblock .soldout { clear: both }
+div.listrightblock .btnbox {
+    margin: 0 0 10px 0;
+    padding: 1px;
+    float: right;
+}
+div.cart .cartbtn img {
+    display: block;
+    width: 80%;
+    margin: 0px;
+}
+div.cart .box54 {
+    width: 54px;
+    border: solid 1px #ccc;
+}
+*/
+
+/* 検索結果 */
+p.conditionarea {
+    clear: both;
+    width: 320px;
+    margin: 0 auto;
+    padding: 5px;
+    border: solid 1px #333;
+}
+/* ページ送り */
+.pagenumberarea,
+.pagecondarea {
+    clear: both;
+    width: 95%;
+    margin: 10px auto;
+    padding: 5px;
+    background: #f3f3f3;
+    text-align: center;
+    font-family: HiraKakuProN-W3;
+    overflow:hidden;
+}
+
+.pagecondarea { border: 1px solid #CCCCCC }
+.pagenumberarea .pagenumber { width: 32.9% }
+.pagenumberarea li .left {
+    width: 320px;
+    margin: auto 0;
+    padding: 5px 0px text-align: center;
+    white-space: nowrap;
+}
+.pagenumberarea .center {
+	margin:5px auto;
+    text-align: center;
+    white-space: pre;
+    text-decoration:none;
+}
+.pagenumberarea .center a{
+    text-align: center;
+    white-space: pre;
+	color:#2f2f2f;
+    text-decoration:none;
+}
+.pagenumberarea .center a:hover{
+    text-decoration:underline;
+}
+.pagenumberarea li .right {
+    width: 320px;
+    margin: 0px 0px;
+    padding: 5px 0px;
+    text-align: center;
+    white-space: nowrap;
+}
+.pagenumberarea .pagenumber {
+    color: #535353;
+    font-weight: bold;
+}
+p.pagenumberarea .number { font-weight: bold }
+
+.pagenumberarea>.ct_btn>strong{
+    color: #fff;
+}

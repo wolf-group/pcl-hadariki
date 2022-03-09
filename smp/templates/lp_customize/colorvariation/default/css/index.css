@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* FLASH
+----------------------------------------------- */
+div#flasharea {
+      width:320px;
+      text-align:center;
+      margin:0px 0px;
+      padding:0;
+	}
+	
+div#flasharea img{
+     margin:5px 0px;
+     padding:0px;
+	}
+div#flasharea p{
+     margin:3px 5px;
+     padding:0px 20px 0px 0px;
+     text-align:left;
+     font-size:90%;
+     font-weight:bold;
+}
+
+div#flasharea table{
+    width:100%;
+    margin:5px 0px;
+   }
+
+
+div#flasharea td{
+width:96px;
+    margin:0px;
+    padding:5px;
+    text-align:center;
+    font-size:12px;
+   }
+
+.marquee{
+    width:310px;
+    color:#ffffff;
+    background:#f9b640;
+    margin:0px auto;
+    padding:0;
+    text-align:center;
+}

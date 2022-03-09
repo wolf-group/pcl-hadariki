@@ -1,0 +1,123 @@
+@import url("reset.scss");
+div#container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#content {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#content img {
+  width: 100%;
+}
+
+#content .cv_area {
+  position: relative;
+}
+
+#content .cv_area a {
+  display: block;
+  width: 93%;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#content .cv_area a.tokuten {
+  bottom: 5%;
+}
+
+#content .cv_area a img {
+  -webkit-animation: yureru-s 2s infinite;
+          animation: yureru-s 2s infinite;
+}
+
+#attentionResale {
+  border: 1px solid #ccc;
+  width: 96%;
+  margin: 1em auto;
+}
+
+#attentionResale dt {
+  font-size: 130%;
+  color: #d41001;
+  border-bottom: 1px solid #ccc;
+  background: #f5f4f3;
+  text-align: center;
+  padding: .5em 0;
+}
+
+#attentionResale dd {
+  font-size: 90%;
+  margin: 0;
+  padding: 1em;
+  text-align: left;
+}
+
+@-webkit-keyframes yureru-s {
+  0% {
+    -webkit-transform: translate(2px, 0px);
+            transform: translate(2px, 0px);
+  }
+  5% {
+    -webkit-transform: translate(-2px, 0px);
+            transform: translate(-2px, 0px);
+  }
+  10% {
+    -webkit-transform: translate(2px, 0px);
+            transform: translate(2px, 0px);
+  }
+  15% {
+    -webkit-transform: translate(-2px, 0px);
+            transform: translate(-2px, 0px);
+  }
+  20% {
+    -webkit-transform: translate(2px, 0px);
+            transform: translate(2px, 0px);
+  }
+  25% {
+    -webkit-transform: translate(-2px, 0px);
+            transform: translate(-2px, 0px);
+  }
+  30% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes yureru-s {
+  0% {
+    -webkit-transform: translate(2px, 0px);
+            transform: translate(2px, 0px);
+  }
+  5% {
+    -webkit-transform: translate(-2px, 0px);
+            transform: translate(-2px, 0px);
+  }
+  10% {
+    -webkit-transform: translate(2px, 0px);
+            transform: translate(2px, 0px);
+  }
+  15% {
+    -webkit-transform: translate(-2px, 0px);
+            transform: translate(-2px, 0px);
+  }
+  20% {
+    -webkit-transform: translate(2px, 0px);
+            transform: translate(2px, 0px);
+  }
+  25% {
+    -webkit-transform: translate(-2px, 0px);
+            transform: translate(-2px, 0px);
+  }
+  30% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+/*# sourceMappingURL=style.css.map */

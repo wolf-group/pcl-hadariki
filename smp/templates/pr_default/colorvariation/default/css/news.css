@@ -1,0 +1,81 @@
+/* ニュース(Page)
+----------------------------------------------- */
+div#newsdata {
+    width: 95%;
+    margin:5px 5px;
+    padding:0px 0px;
+    text-align:left;
+    font-size: 90%;
+    word-break: break-all;
+}
+div#newsdata h2{
+    width: 100%;
+    text-align:center;
+    margin: 0 auto;
+    padding:10px 0;
+    background: #535353;
+    font-size:14px;
+    font-weight:bold;
+    color:#ffffff;
+}
+div#newsdata dl {
+    padding: 10px 0;
+    border-bottom:1px dashed #2f2f2f;
+}
+div#newsdata dl.end {
+    padding: 10px 0;
+    background: url("") no-repeat bottom;
+}
+div#newsdata dl dt {
+    padding: 0 0 0 20px;
+    background: url("../img/top/news_icon.jpg") no-repeat;
+}
+
+/* ニュース(Block Area)
+----------------------------------------------- */
+div#newsarea {
+    width: 95%;
+    margin: 5px auto;
+    padding: 0;
+    border: solid 1px #ccc;
+	text-align: center;
+	overflow:hidden;
+	clear:both;
+    word-break: break-all;
+}
+div#newsarea h2{
+    margin: 0 auto;
+	padding:10px;
+	text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background:#535353;
+}
+div#newsarea p{
+	margin:5px 5px;
+	}
+div#newsarea dl {
+    padding: 5px 5px;
+    border-bottom:1px dashed #2f2f2f;
+}
+div#newsarea dl.end {
+    padding: 5px 5px;
+}
+div#newsarea dl{
+    margin-top:0px;	
+    margin-bottom:10px;
+    margin-left:5px;
+    padding:0;
+    background: url("../img/top/news_icon.jpg") no-repeat;
+}
+div#newsarea dt{
+    margin:0 0 3px 30px;	
+    padding:0;
+    text-align: left;
+}
+div#newsarea dd{
+    margin:0 30px 3px 30px;    
+    padding:0;
+    text-align: left;
+}

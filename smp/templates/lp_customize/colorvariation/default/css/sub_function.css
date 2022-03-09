@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* お客様の声 */
+div#customervoicearea {
+    width: 95%;
+    margin: 5px 4px;
+    padding: 0px 0px;
+    border: solid 1px #ccc;
+    text-align: center;
+    overflow: hidden;
+}
+div#customervoicearea h2 {
+    padding: 0;
+    width: 95%;
+    margin: 0 0 10px 0;
+    padding:10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background: #535353;
+}
+div#customervoicearea img {
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+}
+div#customervoicearea .voicedate {
+    font-weight: bold;
+    margin: 10px 0 0 5px;
+    text-align: left;
+    font-size: 90%;
+}
+div#customervoicearea .voicetitle {
+    padding: 5px 0;
+    margin: 0 5px;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: left;
+}
+div#customervoicearea .voicecomment {
+    margin: 0 5px;
+    text-align: left;
+    font-size: 90%;
+}
+div#customervoicearea li {
+    padding: 5px 0;
+    background: url("../img/common/line_580.gif") no-repeat;
+}
+/* トラックバック */
+div#trackbackarea {
+    width: 310px;
+    margin: 5px 4px;
+    padding: 0px 0px;
+    border: solid 1px #ccc;
+    text-align: center;
+    overflow: hidden;
+}
+div#trackbackarea h2 {
+    padding: 0;
+    width: 300px;
+    margin: 0 0 5px 0;
+    padding:10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background: #535353;
+}
+div#trackbackarea h3 {
+    text-align: left;
+    font-size: 90%;
+    font-weight: bold;
+    margin: 0px;
+    padding: 5px 0 5px 10px;
+}
+div#trackbackarea .box500 {
+    width: 290px;
+    border: solid 1px #ccc;
+    margin: 0px 10px 10px 10px;
+}
+/* この商品を買った人はこんな商品も買っています */
+div#whoboughtare {
+    width: 95%;
+    margin: 0px 5px;
+    padding: 0px 0px;
+    text-align: left;
+    font-size: 90%;
+    word-break: break-all;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+div#whoboughtare h2 {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    background: #535353;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+div#whoboughtare div.whoboughtblock {
+    display: block;
+    width: 100%;
+    margin: 5px 0px;
+    padding: 0px;
+    overflow: hidden;
+    background:#fcf5ff;
+}
+
+div#whoboughtare h3 {
+    font-size:14px;
+font-weight:bold;
+    color:#000;
+}
+
+div#whoboughtare div.whoboughtblock .leftblock {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+}
+div#whoboughtare div.whoboughtblock .leftblock img {
+    margin: 0px;
+    padding: 5px;
+}
+div#whoboughtare div.whoboughtblock .rightblock {
+    float: right;
+    width: 200px;
+    margin: 0px;
+    padding: 5px;
+}
+div#whoboughtare div.whoboughtblock .rightblock p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+}
+div#whoboughtare div.whoboughtblock table {
+    width: 310px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+div#whoboughtare div.whoboughtblock table p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+}
+div#whoboughtare div.whoboughtblock td img {
+    width: 85px;
+    height: 65px;
+    margin: 0px;
+    padding: 5px;
+}
+div#whoboughtare div.whoboughtblock .rightblock a {
+    display: block;
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.textgray { color: #666666 }
+.textblack { color: #000000 }
+.clear { clear: both }
+div.footer_h1 {
+    height: 44px;
+    margin: 0px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    background: #535353;
+}
+div.mybox {
+    width: 90px;
+    -webkit-border-image: url("../img/top/butn01.png")30 30 30 30;
+}

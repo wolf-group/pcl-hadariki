@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/* ---------------------------------------------------------
+
+Cascading Style Sheets
+
+File Name  : style.css
+update     : 2010.12.17
+
+--------------------------------------------------------- */
+
+
+/* tag -------------------------------------------------------------- */
+
+* { margin: 0px; padding: 0px;}
+
+/*body {
+	font-size: 75%;
+	line-height: 1.4;
+	_letter-spacing: 0.1em;
+	text-align: center;
+	font-family: "‚l‚r ‚oƒSƒVƒbƒN",Osaka;
+}*/
+
+h1,h2,h3,h4,h5,h6 { font-size: 100%;}
+img { border: 0px;}
+
+
+
+/* tag -------------------------------------------------------------- */
+
+/* contents -------------------------------------------------------------- */
+
+div#wrapper {
+	width: 880px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	text-align: left;
+}
+
+h1 {
+	margin: 0 10px 8px;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+div#header{
+	width: 880px;
+	margin: 0 auto;
+	padding:0px;
+	}
+
+div#header .btn{background:url(../img/top01.jpg);
+	}
+div#header .btn img{margin-left:300px;
+	}
+div#header p {line-height:1%;
+	}
+	
+div#h2{background:url(../img/h2.jpg) repeat-y 0 0;
+	}
+div#h2 p{margin-left:40px;
+		font-size:10px;
+		padding-bottom:10px;
+		padding-top:10px;
+	}
+
+div#cnbox01{width: 880px;
+		margin: 0 auto;
+		padding:0px;
+	}
+div#cnbox01 .text{background:url(../img/cn01_02.jpg);
+	padding-left:50px;
+	line-height:2.3;
+	}
+
+
+
+div#cnbox02{width: 880px;
+		margin: 0 auto;
+	}
+
+div#cnbox02 .point01{background:url(../img/cn02_03.jpg) repeat-y 0 0;
+	padding-left:130px;
+	padding-right:120px;
+	padding-bottom:22px;
+	line-height:2;
+	}
+	
+div#cnbox02 .point02{background:url(../img/cn03_03.jpg) repeat-y 0 0;
+	padding-left:130px;
+	padding-right:450px;
+	padding-bottom:30px;
+	padding-top:65px;
+	line-height:1.8;
+	}
+div#cnbox02 .point03{background:url(../img/cn03_05.jpg) repeat-x 0 0;
+	padding-left:130px;
+	padding-right:120px;
+	padding-top:25px;
+	line-height:1.5;
+	}
+div#cnbox02 .point04{background:url(../img/cn03_07.jpg) repeat-y 0 0;
+	padding-left:130px;
+	padding-right:120px;
+	padding-bottom:29px;
+	padding-top:55px;
+	line-height:1.5;
+	}
+div#cnbox02 .point05{background:url(../img/index_09_1.jpg) repeat-y 0 0;
+	padding-left:120px;
+	padding-right:120px;
+	padding-bottom:30px;
+	padding-top:40px;
+	line-height:1.5;
+	}
+
+
+div#esute .btn{background:url(../img/cn03_10-02.jpg);
+	padding-bottom:18px;
+	}
+div#esute .btn img{margin-left:250px;
+	}
+div#esute p {line-height:1%;
+	}
+
+
+div#koe .btn{background:url(../img/index_27.jpg);
+
+	}
+div#koe .btn img{margin-left:273px;
+	}
+div#koe p {line-height:1%;
+	}
+	
+div#kotu{}
+
+div#monita{margin: 0 auto;
+	}
+div#monita .text{background:url(../img/index_38.jpg) repeat-y 0 0;
+	padding-left:330px;
+	padding-right:100px;
+	padding-top:30px;
+	}
+
+
+div#fin .btn{background:url(../img/index_42.jpg);
+
+	}
+div#fin .btn img{margin-left:170px;
+	}
+div#fin p {line-height:1%;
+	}
+	
+div#info{background-color:#6b1584;
+	width:880px;
+	height:70px;
+	color:#FFFFFF;}
+div#info p{
+	padding:20px;
+	}
+	
+	
+	
+	
+	

@@ -1,0 +1,36 @@
+/* ヘッダーロゴ
+------------------------------------------------ */
+div#header {
+    width : 100%;
+    height: auto;
+    margin:0 auto 5px auto;
+	padding: 5px 0 0 0;
+	overflow:hidden;
+}
+
+div#header_left {
+    width: 100px;
+    float: left;
+    margin: 0;
+    padding: 0;
+	font-style: normal;
+    list-style: none;
+}
+
+div#header_right {
+    width: 220px;
+    float: right;
+    margin: 0;
+    padding: 0;
+	font-style: normal;
+    list-style: none;
+}
+
+/* ヘッダーナビ
+----------------------------------------------- */
+div#nav {
+    width: 320px;
+    margin: 10px auto;
+    padding:0;
+    text-align: center;
+}

@@ -1,0 +1,503 @@
+@charset "utf-8";
+/* 検索結果 */
+p.conditionarea {
+    clear: both;
+    width: 320px;
+    margin: 0 auto;
+    padding: 5px;
+    border: solid 1px #333;
+}
+/* ページ送り */
+.pagenumberarea,
+.pagecondarea {
+    clear: both;
+    width: 300px;
+    margin: 10px 4px 10px 4px;
+    padding: 5px;
+    background-color: #f3f3f3;
+    text-align: center;
+    font-family: HiraKakuProN-W3;
+}
+ul.pagenumberarea { }
+ul.pagecondarea { border: 1px solid #CCCCCC }
+.pagenumberarea .pagenumber { width: 32.9% }
+ul.pagenumberarea li .left {
+    width: 320px;
+    margin: auto 0;
+    padding: 5px 0px text-align: center;
+    white-space: nowrap;
+}
+ul.pagenumberarea li .center {
+    text-align: center;
+    white-space: pre;
+}
+ul.pagenumberarea li .right {
+    width: 320px;
+    margin: 0px 0px;
+    padding: 5px 0px;
+    text-align: center;
+    white-space: nowrap;
+}
+.pagenumberarea .pagenumber {
+    color: #ff0000;
+    font-weight: bold;
+}
+p.pagenumberarea .number { font-weight: bold }
+/* 商品一覧 */
+/* タイトル */
+div#listtitle {
+    width: 310px;
+    margin: 5px 4px;
+    padding: 0px 0px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: HiraKakuProN-W3;
+}
+div#listtitle h2 {
+    padding: 0;
+    width: 310px;
+    height: 25px;
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background: url("../img/top/background_01.jpg");
+}
+/* 商品 */
+div.listarea {
+    width: 317px;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+    border: solid 1px #f3f3f3;
+    clear: both;
+}
+div.listarea2 {
+    width: 317px;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+    border: solid 1px #f3f3f3;
+    background-color: #f3f3f3;
+    clear: both;
+}
+div.listarea ul li {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+div.listarea2 ul li {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+div.listarea .listphoto {
+    width: 85px;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    position: relative;
+}
+div.listarea .listphoto img {
+    width: 78px;
+    height: 78px;
+    margin: 0px;
+    padding: 5px;
+}
+div.listarea2 .listphoto {
+    width: 85px;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    position: relative;
+}
+div.listarea2 .listphoto img {
+    width: 78px;
+    height: 78px;
+    margin: 0px;
+    padding: 5px;
+}
+div.listrightblock {
+    float: right;
+    text-align: left;
+    width: 205px;
+    margin: 10px 5px;
+    padding: 0px;
+    background-image: url("../img/top/listarrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+div.listarea .listrightblock a {
+    width: 205px;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+div.listarea2 .listrightblock a {
+    width: 205px;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+div.listarea .listrightblock h3 {
+    margin: 0px;
+    padding: 0;
+    text-align: left;
+    font-size: 100%;
+    font-weight: bold;
+}
+div.listarea2 .listrightblock h3 {
+    margin: 0px;
+    padding: 0;
+    text-align: left;
+    font-size: 100%;
+    font-weight: bold;
+}
+div.listrightblock .listcomment {
+    width: 175px;
+    font-size: 10px;
+    line-height: 14px;
+    color: #000000;
+    font-weight: nomal;
+    margin: 5px 5px 5px 0px;
+}
+div.listrightblock .pricebox {
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    text-align: left;
+    margin: 5px 0px 5px 0px;
+    white-space: nowrap;
+}
+div.listrightblock p {
+    margin: 0;
+    padding: 0 0 5px 0px;
+    line-height: 16px;
+    color: #000000;
+}
+div.listrightblock .soldout { clear: both }
+div.listrightblock .btnbox {
+    margin: 0 0 10px 0;
+    padding: 1px;
+    float: right;
+}
+div.cart .cartbtn img {
+    display: block;
+    width: 80%;
+    margin: 0px;
+}
+div.cart .box54 {
+    width: 54px;
+    border: solid 1px #ccc;
+}
+*/
+
+/* 商品詳細 */
+/* タイトル */
+div#detailtitle {
+    width: 320px;
+    margin: 0px;
+    padding: 0px;
+}
+div#detailtitle01 h2 { margin: 0px 0px 0px 5px }
+div#detailtitle h2 {
+    width: 310px;
+    height: 25px;
+    margin: 0px 5px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0;
+    text-align: center;
+    background: #faa035;
+}
+div#detailtitle p {
+    margin: 5px 5px;
+    padding: 0px 5px;
+    font-size: 12px;
+    line-height: 18px;
+}
+/* 商品 */
+div#detailarea {
+    width: 320px;
+    margin: 15px 0 0 0;
+}
+div#detailarea .teiki {
+    width: 280px;
+    text-align: left;
+    border: 1px solid #ccc;
+    margin: 5px 5px 10px 4px;
+    padding: 0px 0px 3px 0px;
+}
+div#detailarea .teiki h3 {
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    background: #f5f4f3;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+div#detailphotoblock {
+    text-align: center;
+    margin: 5px;
+    padding: 0px;
+}
+div#detailrightblock {
+    width: 290px;
+    margin: 10px 4px;
+    padding: 10px 10px 0 10px;
+    border: solid 1px #ccc;
+}
+div#detailrightblock .price1 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff0000;
+}
+div#detailrightblock .price_total {
+    border-bottom: 1px dotted #cccccc;
+    margin: 5px 0px;
+    padding-bottom: 5px;
+}
+div#detailrightblock h2 {
+    margin: 5px 0;
+    padding: 0;
+    color: #ff6600;
+    font-size: 140%;
+    font-weight: bold;
+}
+div#detailrightblock p {
+    margin: 5px 0px;
+    padding: 0;
+}
+div#detailarea .teiki p {
+    margin: 0px;
+    padding: 3px;
+}
+div#detailrightblock .box54 {
+    width: 30px;
+    border: solid 1px #ccc;
+}
+div#detailrightblock .btn {
+    clear: both;
+    margin: 10px 0 0 0;
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+    border-top: dotted 1px #ccc;
+}
+div.nav01 { width: 320px }
+div.nav01 input { }
+/* サブタイトル */
+div#subareablock {
+    width: 310px;
+    margin: 5px 4px;
+    padding: 0px 0px;
+    border: solid 1px #ccc;
+    text-align: center;
+    overflow: hidden;
+    font-size: 12px;
+}
+div#subareablock h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background: url("../img/top/background_01.jpg");
+    font-weight: bold;
+    font-size: 120%;
+    color: #ffffff;
+    border-bottom: solid 1px #ccc;
+}
+div.subarea {
+    padding-bottom: 5px;
+    text-align: left;
+    font-size: 90%;
+    word-break: break-all;
+}
+div.subarea h3 {
+    font-size: 100%;
+    margin: 5px 5px 0px 5px;
+    padding: 5px;
+    background-color: #e4e4e4;
+}
+div.subtext { padding: 5px }
+div.subphotoimg { text-align: center }
+/* お客様の声 */
+div#customervoicearea {
+    width: 310px;
+    margin: 5px 4px;
+    padding: 0px 0px;
+    border: solid 1px #ccc;
+    text-align: center;
+    overflow: hidden;
+}
+div#customervoicearea h2 {
+    padding: 0;
+    width: 310px;
+    height: 25px;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background: url("../img/top/background_01.jpg");
+}
+div#customervoicearea img {
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+}
+div#customervoicearea .voicedate {
+    font-weight: bold;
+    margin: 10px 0 0 5px;
+    text-align: left;
+    font-size: 90%;
+}
+div#customervoicearea .voicetitle {
+    padding: 5px 0;
+    margin: 0 5px;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: left;
+}
+div#customervoicearea .voicecomment {
+    margin: 0 5px;
+    text-align: left;
+    font-size: 90%;
+}
+div#customervoicearea li {
+    padding: 5px 0;
+    background: url("../img/common/line_580.gif") no-repeat;
+}
+/* トラックバック */
+div#trackbackarea {
+    width: 310px;
+    margin: 5px 4px;
+    padding: 0px 0px;
+    border: solid 1px #ccc;
+    text-align: center;
+    overflow: hidden;
+}
+div#trackbackarea h2 {
+    padding: 0;
+    width: 310px;
+    height: 25px;
+    margin: 0 0 5px 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background: url("../img/top/background_01.jpg");
+}
+div#trackbackarea h3 {
+    text-align: left;
+    font-size: 90%;
+    font-weight: bold;
+    margin: 0px;
+    padding: 5px 0 5px 10px;
+}
+div#trackbackarea .box500 {
+    width: 290px;
+    border: solid 1px #ccc;
+    margin: 0px 10px 10px 10px;
+}
+/* この商品を買った人はこんな商品も買っています */
+div#whoboughtare {
+    width: 310px;
+    margin: 0px 5px;
+    padding: 0px 0px;
+    text-align: left;
+    font-size: 90%;
+    word-break: break-all;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+div#whoboughtare h2 {
+    width: 310px;
+    text-align: center;
+    margin: 0 auto;
+    background: url("../img/top/background_01.jpg");
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+div#whoboughtare div.whoboughtblock {
+    display: block;
+    width: 310px;
+    margin: 5px 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+div#whoboughtare h3 { font-size: 100% }
+div#whoboughtare div.whoboughtblock .leftblock {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+}
+div#whoboughtare div.whoboughtblock .leftblock img {
+    margin: 0px;
+    padding: 5px;
+}
+div#whoboughtare div.whoboughtblock .rightblock {
+    float: right;
+    width: 200px;
+    margin: 0px;
+    padding: 5px;
+}
+div#whoboughtare div.whoboughtblock .rightblock p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+}
+div#whoboughtare div.whoboughtblock table {
+    width: 310px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+div#whoboughtare div.whoboughtblock table p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+}
+div#whoboughtare div.whoboughtblock td img {
+    width: 85px;
+    height: 65px;
+    margin: 0px;
+    padding: 5px;
+}
+div#whoboughtare div.whoboughtblock .rightblock a {
+    display: block;
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.textgray { color: #666666 }
+.textblack { color: #000000 }
+.clear { clear: both }
+div.footer_h1 {
+    height: 44px;
+    margin: 0px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    background: url("../img/top/footer_h1.png");
+}
+div.mybox {
+    width: 90px;
+    -webkit-border-image: url("../img/top/butn01.png")30 30 30 30;
+}

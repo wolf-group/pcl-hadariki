@@ -1,0 +1,339 @@
+@charset "utf-8";
+/* MYPAGE共通指定
+----------------------------------------------- */
+div#mypagecolumn {
+    width: 320px;
+    margin: 10px auto 0 auto;
+}
+div#mypagecolumn h2 {
+    margin: 0 auto;
+    padding:10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background:#535353;
+}
+
+/* MYPAGE Inner
+----------------------------------------------- */
+.mypage_inner {
+    width: 320px;
+    margin: 0 auto;
+}
+.mypage_inner .pricetd01 {
+    text-align: right;
+    color: #535353;
+    font-weight: bold;
+    font-size: 14px;
+}
+.mypage_inner table {
+    padding: 3px;
+    color: #000;
+}
+.mypage_inner table th {
+    text-align: center;
+    font-size: 12px;
+}
+.mypage_inner table td {
+    text-align: left;
+    font-size: 12px;
+}
+.mypage_inner table td p {
+    font-size: 90%;
+    text-align: left;
+    margin: 0px;
+    padding: 3px;
+}
+.mypage_inner table th.resulttd {
+    width: 310px;
+    margin: 5px auto 0 auto;
+    padding: 10px 5px;
+    text-align: left;
+    background: #e9f4f9;
+}
+.mypage_inner table.delivname th {
+    text-align: left;
+    width: 100px;
+}
+.mypage_inner table caption {
+    width: 310px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 3px;
+    text-align: left;
+    font-weight: bold;
+    color: #000;
+    background: #f0f0f0;
+}
+.mypage_inner table td.td_title {
+    text-align: center;
+    font-size: 12px;
+    margin: 0px;
+    padding: 5px 5px;
+    border-bottom: 5px solid #cccccc;
+    font-size: 120%;
+    font-weight: bold;
+}
+.mypage_inner img {
+    margin: 5px 0px 0px 0px;
+    padding: 0px;
+}
+.mypage_inner h3 {
+    margin: 10px 0;
+    padding: 3px 5px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    background: #535353;
+}
+.mypage_inner p {
+    font-size: 90%;
+    margin: 0px;
+    padding: 0px 5px 10px 5px;
+}
+.mypage_inner p.myconditionarea {
+    clear: both;
+    width: 310px;
+    margin: 0px 4px;
+    padding: 5px 0px;
+    font-size: 100%;
+    line-height: 100%;
+    border-bottom: solid 1px #ccc;
+}
+.mypage_inner p.delivempty {
+    clear: both;
+    width: 320px;
+    margin: 5px auto 15px auto;
+    padding: 10px 0;
+    border-top: solid 2px #CCC;
+    border-bottom: solid 2px #CCC;
+    text-align: center;
+}
+.mypage_inner .box120 {
+    width: 75px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+.mypage_inner .box60 {
+    width: 50px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+.mypage_inner .box300 {
+    width: 200px;
+    margin: 5px 0 0 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+.mypage_inner .box260 {
+    width: 260px;
+    margin: 5px 0 0 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+.mypage_inner .zipimg img { margin: 5px 0 0 0 }
+.mypage_inner #completetext {
+    clear: both;
+    width: 310px;
+    margin: 0 0 5px 0;
+    padding: 10px 4px;
+    border: solid 1px #CCC;
+    text-align: left;
+}
+.mypage_inner #completetext1 {
+    clear: both;
+    width: 310px;
+    margin: 0 0 5px 0;
+    padding: 10px 4px 10px 4px;
+    border: solid 1px #CCC;
+    text-align: left;
+}
+.mypage_inner #completetext1 .min01 {
+    text-align: left;
+    padding-right: 5px;
+    padding: 5px;
+    font-size: 80%;
+}
+.mypage_inner #completetext1 .h4text {
+    margin: 0px;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 92.5%;
+    border-top: solid 1px #D9D9D9;
+    border-bottom: solid 1px #D9D9D9;
+    color: #2f2f2f;
+}
+.mypage_inner #completetext .min01 {
+    text-align: left;
+    padding-right: 5px;
+    padding: 5px;
+    font-size: 80%;
+}
+.mypage_inner #completetext .h4text {
+    margin: 0px;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 92.5%;
+    border-top: solid 1px #D9D9D9;
+    border-bottom: solid 1px #D9D9D9;
+    color: #2f2f2f;
+}
+
+/* テーブル制御
+----------------------------------------------- */
+
+.td_blue {
+    background: #e9f4f9;
+    text-align: center;
+    font-weight: bold;
+}
+.td_gray {
+    background: #f0f0f0;
+    text-align: left;
+    font-weight: bold;
+}
+.td_nomal { text-align: left }
+
+
+/* Myページ制御
+----------------------------------------------- */
+.mypage_status{
+    margin: 0;
+    padding:10px;
+}
+
+.mypage_info{
+    margin: 0;
+    padding: 0;
+}
+
+.mypage_info_all{
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+}
+.mypage_info_all h4{
+    padding: 5px;
+    font-size:100%;
+    font-weight: bold;
+    color: #2f2f2f; 
+}
+.mypage_info_left{
+    width: 70px;
+    float: left;
+}
+.mypage_info_right{
+    width: 240px;
+    float: right;
+}
+.mypage_info_num{
+    margin: 0;
+    padding: 5px;
+    width: 240px;
+    float: left;
+}
+.mypage_info_price{
+    margin: 0;
+    padding: 5px;
+    width: 240px;
+    float: left;
+}
+
+/* 情報変更
+----------------------------------------------- */
+.info_change{
+    margin: 0;
+    padding: 0;
+}
+.info_change h4{
+    padding: 5px;
+    font-size:100%;
+    font-weight: bold;
+    color: #2f2f2f; 
+}
+
+
+/* マイページインフォ制御
+----------------------------------------------- */
+.info_head{
+    margin: 0;
+    padding: 5px;
+    font-size: 90%;
+    font-weight: bold;
+    color: #2f2f2f;
+    background: #FBF3FF;
+}
+.info_inner{
+    margin: 0;
+    padding: 5px;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: right;
+    color: #000000;
+    background: #fefefe;
+}
+.info_inner02{
+    margin: 0;
+    padding: 5px;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+    background: #fefefe;
+}
+.magazine_choice{
+    margin: 0;
+    padding: 5px;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+    background: #fefefe;
+}
+
+
+
+
+/* 購入履歴一覧/詳細
+----------------------------------------------- */
+div#mynavarea {
+    width: 320px;
+    margin: 0px;
+    padding: 0px;
+    font-family: HiraKakuProN-W6;
+}
+div#mynavarea li {
+    list-style: none;
+    height: 43px;
+    font-family: HiraKakuProN-W6;
+    font-size: 16px;
+    border-bottom: solid 1px #D9D9D9;
+    line-height: 44px;
+    background:#2f2f2f;
+}
+div#mynavarea li a {
+    display: block;
+    height: 43px;
+    padding: 0px 26px 0px 10px;
+    background: url("../img/top/listarrow.png") no-repeat 95% 50%;
+    text-decoration: none;
+    color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+div#completetext p.changetext {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 92.5%;
+}
+div#completetext .textred {
+    color: #535353;
+    font-weight: bold;
+    font-size: 120%;
+    margin: 0px;
+    padding: 5px 0px;
+}
+

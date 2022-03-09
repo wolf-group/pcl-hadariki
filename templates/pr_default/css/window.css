@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+
+/* 商品詳細拡大写真
+----------------------------------------------- */
+div#bigimage {
+	width: 520px;
+	margin: 15px auto 0 auto;
+	background-color: #ffffff;
+}
+
+div#bigimage img {
+	padding: 10px;
+	background-color: #ffffff;
+}
+
+/* カート拡大写真
+----------------------------------------------- */
+div#cartimage {
+	width: 280px;
+	margin: 15px auto 0 auto;
+	background-color: #ffffff;
+}
+
+div#cartimage img {
+	padding: 10px;
+	background-color: #ffffff;
+}
+
+
+/* お客様の声の書き込み・新しいお届け先の追加・変更
+----------------------------------------------- */
+div#windowcolumn {
+	width: 550px;
+	margin: 15px auto 0 auto;
+	padding:5px 0;
+	background-color: #fff;
+	font-size:12px;
+	overflow:hidden;
+}
+
+/* ヘッダー
+----------------------------------------------- */
+div#windowcolumn .head {
+	margin:5px auto;
+	font-size: 14px;
+	font-weight: bold;
+	background:#fff;
+	border-bottom:2px solid #333;
+}
+
+div#windowcolumn h2 {
+	padding: 5px 30px;
+	color: #000;
+	background: url("../img/icon/icon_about.png") no-repeat 1% 48%;
+	font-size:16px;
+}
+
+div#windowcolumn p {
+	 padding: 10px 0px 5px 0;
+	/*background: #F2F3F4;*/
+}
+
+
+div#windowarea {
+	width: 500px;
+	margin: 15px auto 0 auto;
+}
+
+div#windowarea p.windowtext {
+	margin: 15px 0 0 0;
+}
+
+div#windowarea table {
+	width: 490px;
+	margin-top:10px;
+	padding:10px 0;
+
+}
+
+div#windowarea th{
+    text-align: left;
+    width: 25%;
+    padding: 10px 0;
+    background: #fff;
+    border-bottom: 1px dotted #aaa;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+div#windowarea td{
+	text-align:left;
+	padding:10px;
+	border-bottom:1px dotted #aaa;
+}
+
+
+
+
+div#windowarea .zipimg img {
+	margin: 5px 0 0 0;
+}
+
+div#windowarea .box350 {
+	width: 350px;
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+div#windowarea .area350 {
+	width: 350px;
+	height: 120px;
+	border: 1px solid #ccc;
+}
+
+div#windowarea .box120 {
+	width: 120px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	font-size:14px;
+}
+
+div#windowarea .box60 {
+	width: 60px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	font-size:14px;
+}
+
+div#windowarea .box300 {
+	width: 300px;
+	margin:0 0 5px 0;
+	padding: 5px;
+	border: 1px solid #ccc;
+	font-size:14px;
+}
+
+div#windowarea #completebox {
+	width: 490px;
+	margin: 15px 0 0 0;
+	border: 2px solid #ccc;
+}
+
+div#windowarea #completebox p{
+	padding: 60px 5px;
+	text-align: center;
+}
+
+/* 郵便番号検索
+----------------------------------------------- */
+div#zipsearchcolumn {
+	width: 460px;
+	margin: 15px auto 0 auto;
+	background-color: #fff;
+	border-top: 5px solid #29abe2;
+	border-bottom: 5px solid #29abe2;
+}
+
+div#zipsearchcolumn h2 {
+	width: 460px;
+	margin: 0 0 15px 0;
+}
+
+div#zipsearcharea {
+	width: 460px;
+	margin: 15px auto 0 auto;
+}
+
+div#zipsearchcolumn .btn {
+	margin: 15px 0 30px 0;
+	text-align: center;
+}
+
+div#zipsearcharea #completebox p{
+	padding: 60px 5px;
+	text-align: center;
+}
+
+
+
+div#mypagecolumn input[type="radio"], input[type="checkbox"] {
+	display: inline-block;
+    margin-right: 6px;
+}
+
+/*パスワードを忘れた方
+----------------------------------------------- */
+
+div#window_fogot {
+    width: 550px;
+    margin: 0 auto !important;
+    padding: 0;
+    background-color: #fff;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+div#window_fogot #fgt_wd{
+	width:450px !important;
+	margin:0 auto;
+}
+
+div#window_fogot #fgt_wd .head {
+	margin:5px auto;
+	font-size: 14px;
+	font-weight: bold;
+	background:#fff;
+	border-bottom:2px solid #333;
+}
+
+div#window_fogot #fgt_wd h2 {
+	padding: 5px 30px;
+	color: #000;
+	background: url("../img/icon/icon_about.png") no-repeat 1% 48%;
+	font-size:16px;
+}
+
+/*説明文*/
+div#window_fogot .fg_msg {
+    padding: 0.8em 0 0 0;
+	line-height: 1.5em;
+	font-size: 120%;
+}
+div#window_fogot .fg_msg span{
+	color:#d00000;
+	font-weight:500;
+	letter-spacing: 0.001em;
+}
+div#window_fogot .fg_msg .ft_red{
+	font-weight: 600;
+	font-size:125%;
+	letter-spacing: 0.05em;
+}
+
+div#window_fogot .fg_msg .attention_box {
+    margin-top: 5px;
+    padding: 0.3% 0 0 0;
+    border-radius: 3px;
+    border: 2px solid #37a544;
+}
+
+div#window_fogot .fg_msg .attention_box .attention {
+    color: #37a544;
+    font-size: 88%;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    padding: 0 0 0 10px;
+}
+
+/*入力フォーム*/
+div#window_fogot #fg_box {
+    margin: 0.8em auto;
+    padding: 0.5em 5em !important;
+    border-radius: 3px;
+    background: #f6f6f6;
+    font-weight: 600;
+    font-size: 120%;
+}
+div#window_fogot #fg_box p{
+	text-align: left;
+	padding:5px 0 !important;
+}
+
+div#window_fogot #fg_box .mail {
+    margin: 0 auto;
+    padding: 2.5% 0 5% 0;
+}
+div#window_fogot #fg_box .pass {
+    margin: 0 auto;
+    padding: 1% 0;
+}
+
+div#window_fogot #fg_box .box300 {
+	width: 300px;
+	margin:0 0 5px 0;
+	padding: 5px;
+	border: 1px solid #ccc;
+	font-size:14px;
+}
+
+div#window_fogot #fg_box span{
+	position:relative;
+}
+
+div#window_fogot #fg_box .attention {
+    margin-left: 0 !important;
+    color: #d00000 !important;
+    font-size: 12px !important;
+    line-height: 1rem !important;
+    letter-spacing: 0.005em;
+    /*position: absolute;*/
+	word-wrap: break-word;
+	width:50%;
+}
+
+div#window_fogot .btn {
+    width: 90%;
+    margin: 0 !important;
+    padding: 0;
+    float: left;
+    font-size: 0.85em;
+    background: #333;
+    text-decoration: none;
+}

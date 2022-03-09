@@ -1,0 +1,371 @@
+@charset "utf-8";
+/* 下層共通指定
+----------------------------------------------- */
+div#undercolumn {
+    width: 320px;
+    margin: 10px auto 0 auto;
+}
+div#undercolumn h2.title {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background: url("../img/top/background_01.jpg");
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+div#undercolumn .seach_zero {
+    width: 300px;
+    margin: 10px 4px;
+    padding: 5px;
+    border: solid 1px #ccc;
+    text-align: left;
+}
+div#undercolumn table {
+    width: 310px;
+    margin: 5px 0;
+    padding: 0px 3px;
+}
+/* ◎◎について
+----------------------------------------------- */
+div#undercolumn_aboutus {
+    width: 310px;
+    margin: 5px 4px;
+    padding: 0px 0px;
+    border-bottom: solid 1px #ccc;
+    text-align: center;
+}
+div#undercolumn_aboutus table {
+    width: 310px;
+    margin: 0px;
+    padding: 0px;
+}
+div#undercolumn_aboutus table th {
+    width: 85px;
+    font-size: 12px;
+}
+div#undercolumn_aboutus table td { font-size: 12px; }
+.td_a {
+    background-color: #f5f4f3;
+    text-align: center;
+    font-size: 16px;
+}
+/* 特定商取引法
+----------------------------------------------- */
+div#undercolumn_order {
+    width: 310px;
+    margin: 5px 4px;
+    padding: 0px 0px;
+    border-bottom: solid 1px #ccc;
+    text-align: center;
+}
+div#undercolumn_order table {
+    width: 310px;
+    margin: 0px;
+    padding: 0px;
+}
+div#undercolumn_order table th {
+    width: 80px;
+    font-size: 12px;
+}
+div#undercolumn_order table td {
+    width: 224px;
+    font-size: 12px;
+}
+/* お問い合わせ
+----------------------------------------------- */
+div#undercolumn_contact {
+    width: 310px;
+    margin: 5px 4px;
+    padding: 0px 0px;
+    border-bottom: solid 1px #ccc;
+    text-align: center;
+}
+div#undercolumn_contact h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background: url("../img/top/background_01.jpg");
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+div#undercolumn_contact table {
+    width: 310px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+div#undercolumn_contact table th {
+    width: 100px;
+    font-size: 12px;
+}
+div#undercolumn_contact table td {
+    margin: 0;
+    width: 210px;
+    font-size: 12px;
+}
+.td01 { background-color: #f1f3f3; }
+div#undercolumn_contact p {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 10px 3px;
+    text-align: left;
+}
+div#undercolumn_contact .em {
+    font-weight: bold;
+    color: #ff0000;
+    font-size: 90%;
+}
+div#undercolumn_contact .box120 {
+    width: 70px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+div#undercolumn_contact .box60 {
+    width: 55px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+div#undercolumn_contact .box380 {
+    width: 200px;
+    margin: 5px 0 5px 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+div#undercolumn_contact .area380 {
+    width: 200px;
+    height: 200px;
+    margin: 5px 6px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+div#undercolumn_contact .completetext {
+    width: 290px;
+    margin: 20px 5px 5px 5px;
+    padding: 5px;
+    border: 2px solid #ccc;
+}
+div#undercolumn_contact .zipimg img { margin: 5px 0 0 0; }
+/* 会員登録
+----------------------------------------------- */
+div#undercolumn_entry {
+    width: 310px;
+    margin: 5px;
+    padding: 0;
+    text-align: left;
+}
+div#undercolumn_entry .kiyaku {
+    width: 302px;
+    margin: 0 0 5px 0;
+    padding: 3px;
+    text-align: left;
+    border: 1px solid #cccccc;
+    font-size: 12px;
+}
+div#undercolumn_entry .area470 {
+    width: 310px;
+    margin: 5px 5px 0px 3px;
+    height: 2150px;
+    padding: 10px 5px 0px 5px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+div#undercolumn_entry table {
+    width: 311px;
+    margin: 0px 2px;
+    padding: 0px;
+    font-size: 12px;
+}
+div#undercolumn_entry table th {
+    width: 80px;
+    font-size: 12px;
+}
+div#undercolumn_entry .tdgray01 { background-color: #f5f4f3; }
+div#undercolumn_entry .box120 {
+    width: 65px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+div#undercolumn_entry .box60 {
+    width: 50px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+div#undercolumn_entry .box380 {
+    width: 200;
+    margin: 5px 0 0 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+div#undercolumn_entry .box320 {
+    width: 300px;
+    margin: 5px 0 0 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+div#undercolumn_entry .zipimg img { margin: 5px 0 0 0; }
+div#undercolumn_entry .completetext {
+    width: 300px;
+    margin: 0px auto 5px auto;
+    padding: 5px;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+div#undercolumn_entry .completetext em { font-weight: bold; }
+div#undercolumn_entry p {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 10px 5px;
+    padding: 0px;
+    text-align: left;
+}
+div#undercolumn_entry dt {
+    float: left;
+    width: 4em;
+    border: 1px solid #FF0000;
+}
+div#undercolumn_entry ul {
+    margin: 5px 0px 10px 0px;
+    padding: 0;
+}
+div#undercolumn_entry li {
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+    font-family: HiraKakuProN-W6;
+    font-size: 16px;
+    line-height: 54px;
+    text-align: left;
+    border: solid 1px #D9D9D9;
+    background-color: #f5f4f3;
+}
+div#undercolumn_entry li a {
+    display: block;
+    height: 54px;
+    padding: 0px 16px 0px 0px;
+    background-image: url("../img/top/listarrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+div#undercolumn_entry p {
+    margin: 3px;
+    padding: 5px 0;
+    font-size: 12px;
+}
+/* 会員登録(table)
+----------------------------------------------- */
+div#undercolumn_entry1 {
+    width: 310px;
+    margin: 5px 4px;
+    padding: 0;
+    text-align: left;
+}
+div#undercolumn_entry1 .area470 {
+    width: 310px;
+    margin: 5px 5px 0px 3px;
+    height: 2150px;
+    padding: 10px 5px 0px 5px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+div#undercolumn_entry1 table {
+    width: 310px;
+    margin: 0px 2px;
+    padding: 0px;
+    font-size: 12px;
+}
+div#undercolumn_entry1 table th { font-size: 12px; }
+div#undercolumn_entry1 .tdgray01 { background-color: #f5f4f3; }
+div#undercolumn_entry1 .box120 {
+    width: 65px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+div#undercolumn_entry .box60 {
+    width: 50px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+div#undercolumn_entry1 .box380 {
+    width: 150;
+    margin: 5px 0 0 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+div#undercolumn_entry1 .box320 {
+    width: 300px;
+    margin: 5px 0 0 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+div#undercolumn_entry1 .zipimg img { margin: 5px 0 0 0; }
+div#undercolumn_entry1 .completetext {
+    width: 300px;
+    margin: 15px 5px 0 5px;
+    padding: 15px;
+    border: 5px solid #ccc;
+}
+div#undercolumn_entry1 .completetext em { font-weight: bold; }
+div#undercolumn_entry1 p {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 10px 5px;
+    padding: 0px;
+    text-align: left;
+}
+div#undercolumn_entry1 .completetext {
+    width: 290px;
+    margin: 20px 5px 5px 5px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+div#undercolumn_entry1 dt {
+    float: left;
+    width: 4em;
+    border: 1px solid #FF0000;
+}
+div#undercolumn_entry1 ul {
+    width: 300px;
+    margin: 5px 3px;
+    padding: 0;
+    border: 1px solid #cccccc;
+}
+div#undercolumn_entry1 li {
+    list-style: none;
+    font-family: HiraKakuProN-W6;
+    font-size: 16px;
+    line-height: 54px;
+    text-align: left;
+    background-color: #f5f4f3;
+    padding: 5px;
+}
+div#undercolumn_entry1 li a {
+    display: block;
+    height: 54px;
+    padding: 0px 16px 0px 0px;
+    background-image: url("../img/top/listarrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+div#undercolumn_entry1 p {
+    margin: 3px;
+    padding: 0px;
+    font-size: 10px;
+}
+

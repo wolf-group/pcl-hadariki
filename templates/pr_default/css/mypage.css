@@ -1,0 +1,454 @@
+@charset "utf-8";
+
+/* My Page Navigation
+----------------------------------------------- */
+div#mynavarea {
+	margin:10px 0;
+	overflow:hidden;
+	float: left;
+	width:23%;
+}
+
+
+/*welcome
+----------------------------------------------- */
+
+div#mynavarea .welcome{
+	padding: 10px;
+	margin: 10px auto;
+	font-weight:bold;
+	font-size: 15px;
+    line-height: 1.5rem;
+}
+
+div#mynavarea .welcome span{color:#d96040;padding: 0 5px;}
+div#mynavarea .welcome .w_point{background:#d96040;margin: 3px 0;padding:3px;text-align:center;color:#fff;}
+
+
+
+/* 下層共通指定
+----------------------------------------------- */
+div#mypagecolumn {
+	width: 100%;
+	margin: 2% auto;
+}
+
+/* MYPAGE共通指定
+----------------------------------------------- */
+
+div#mycontentsarea {
+	width: 74%;
+	margin:2% 0 0 1%;
+	float:right;
+	font-size:14px;
+}
+
+div#mycontentsarea table th.resulttd {
+	text-align: right;
+}
+
+div#mycontentsarea table.delivname th {
+	text-align: left;
+	width: 30%;
+	background:none;
+}
+
+div#mycontentsarea table caption {
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	padding: 8px;
+	background-color: #f0f0f0;
+	text-align: left;
+	font-weight: bold;
+	color: #000;
+}
+
+
+/* Mypage Table
+----------------------------------------------- */
+
+div#mypagecolumn table{
+	width: 100%;
+	margin: 15px auto 0 auto;
+	border-top: 1px solid #ccc;
+	/*border-left: 1px solid #ccc;*/
+	border-collapse: collapse;
+	text-align: left;
+}
+
+div#mypagecolumn table th{
+	padding: 8px;
+	/*border-right: 1px solid #ccc;*/
+	border-bottom: 1px solid #ccc;
+	background: #f0f0f0;
+	font-weight: normal;
+}
+
+div#mypagecolumn table td {
+	padding: 8px;
+	/*border-right: 1px solid #ccc;*/
+	border-bottom: 1px solid #ccc;
+}
+
+div#mypagecolumn table p{padding:5px 0 10px 0;}
+
+/* ヘッダー
+----------------------------------------------- */
+div#mypagecolumn .head {
+    margin: 5px auto 10px;
+    font-size: 160%;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+}
+
+div#mypagecolumn .subhead {
+	margin:5px auto;
+	font-size: 12px;
+	font-weight: nomal;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	background-color:#f7f7f7;
+	-moz-box-shadow: 0 1px 6px #ccc;
+	-webkit-box-shadow: 0 1px 6px #ccc;
+	box-shadow: 0 1px 6px #ccc;
+}
+
+div#mypagecolumn .t_mypage {
+	padding: 8px 5px;
+	color: #000;
+	/*background: url("../img/icon/icon_about.png") no-repeat 2% 48%;*/
+}
+
+div#mypagecolumn .t_login {
+	padding: 8px 40px;
+	color: #000;
+	background: url("../img/icon/icon_login.png") no-repeat 1% 48%;
+	font-size:16px;
+}
+
+div#mypagecolumn .t_area {
+	margin: 0 0 10px 0;
+	overflow: hidden;
+	padding-bottom: 5px;
+}
+
+div#mypagecolumn table {
+	width: 100%;
+}
+
+/* タイトル
+----------------------------------------------- */
+.mycont_head {
+	margin: 10px auto 5px auto;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fff;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;}
+
+.mycont_head h3 {
+	padding: 8px 10px;
+    color: #333;
+	font-size:16px;
+    /* background: url("../img/icon/icon_nav.png") no-repeat 99% 80%; */
+}
+
+/* h3
+----------------------------------------------- */
+
+div#mypagecolumn .have{
+	margin: 0 0;
+	padding: 2% 2% 2% 10%;
+	color:#000;
+	font-wight:bold;
+	font-size:16px;
+	background: url("../img/icon/icon_head.png") no-repeat 1% 50%;
+}
+
+div#mypagecolumn .d_have{
+	margin: 0 0;
+	padding: 2% 2% 2% 10%;
+	color:#000;
+	font-wight:bold;
+	font-size:16px;
+	background: url("../img/icon/icon_head.png") no-repeat 1% 50%;
+}
+
+/* 段落
+----------------------------------------------- */
+.p_waku{
+	margin:10px 0;
+	padding:10px 0;
+}
+
+
+
+/* ログイン
+----------------------------------------------- */
+
+div#mypagecolumn .loginarea {
+	width: 46%;
+	margin: 2% 1%;
+	padding: 1%;
+	float:left;
+	min-height: 420px;
+	box-shadow:0 2px 4px #ccc;
+	-webkit-box-shadow:0 2px 4px #ccc;
+	-moz-box-shadow:0 2px 4px #ccc;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}
+
+div#mypagecolumn .loginarea .inputtext {
+	margin: 5% auto;
+}
+
+div#mypagecolumn .loginarea .inputtext02 {
+	margin: 5% auto 0 auto;
+	font-size: 90%;
+	float:left;
+}
+
+div#mypagecolumn .loginarea .inputbox {
+	width: 90%;
+	margin: 3% auto;
+	padding: 5%;
+	background: #f6f6f6;
+}
+
+div#mypagecolumn .loginarea .inputbox .passwd {
+	margin: 15px 0 0 0;
+}
+
+div#mypagecolumn .loginarea .inputbox .box250 {
+	width: 69%;
+	margin: 5px 0 0 0;
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+div#mypagecolumn .loginarea .inputbox .box275 {
+	width: 69%;
+	margin: 5px 0 0 0px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	position:relative;
+	left:23px;
+}
+
+div#mypagecolumn .loginarea .inputbox02 {
+	width: 460px;
+	margin: 15px auto 0 auto;
+	padding: 15px 20px;
+	text-align: center;
+}
+
+/* 購入履歴一覧/詳細
+----------------------------------------------- */
+
+div#mycontentsarea h3 {
+	margin: 0;
+}
+
+div#mycontentsarea h4 {
+	margin: 20px 0 0 0;
+	font-size:14px;
+	font-weight:bold;
+}
+
+div#mycontentsarea h4 span{
+	position: relative;
+    /*top: 20px*/}
+
+div#mycontentsarea table th {
+	text-align: center;
+}
+
+div#mycontentsarea p.myconditionarea {
+	clear: both;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    /* border: solid 1px #333; */
+    /*background-color: #f6f6f6;*/
+    line-height: 1.5rem;}
+
+div#mycontentsarea p.delivempty {
+	clear: both;
+	width: 80%;
+	margin: 15px auto 0 auto;
+	padding: 20px;
+	border: solid 2px #CCC;
+	text-align: center;
+}
+
+/* 会員登録内容変更/>退会
+----------------------------------------------- */
+div#mycontentsarea .box120 {
+	width: 120px;
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+div#mycontentsarea .box60 {
+	width: 60px;
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+div#mycontentsarea .box300 {
+	width: 300px;
+	margin: 5px 0 0 0;
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+div#mycontentsarea .box260 {
+	width: 260px;
+	margin: 5px 0 0 0;
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+div#mycontentsarea .zipimg img {
+	margin: 5px 0 0 0;
+}
+
+div#mycontentsarea #completetext {
+	width: 90%;
+	margin: 3% auto 0 auto;
+	padding: 4%;
+	border: 2px solid #ccc;
+}
+
+div#completetext p.changetext {
+	padding: 40px 0;
+	text-align: center;
+}
+
+/* クーポン
+----------------------------------------------- */
+.area_coupon {
+	padding: 0 0 20px 0;
+	overflow:hidden;
+}
+
+/* ポイント使用
+----------------------------------------------- */
+.use_point_area {
+	margin: 5px 0;
+	padding: 0;
+	line-height: 150%;
+	overflow:hidden;
+	background: #fefefe;
+}
+
+.use_point_area li{
+	padding: 10px 0;
+	border-bottom: 1px #999 dotted;
+}
+
+
+
+/*インプットタイプ
+----------------------------------------------- */
+div#mypagecolumn input[type="radio"], input[type="checkbox"] {
+	display: inline-block;
+    margin-right: 6px;
+}
+
+
+div#mypagecolumn input[type=radio] + label {
+    position: relative;
+     
+    display: inline-block;
+    margin-right: 12px;
+     
+    font-size: 14px;
+    line-height: 30px;
+    left:-20px;
+    cursor: pointer;
+}
+
+div#mypagecolumn input[type=checkbox] + label {
+    position: relative;
+     
+    display: inline-block;
+    margin-right: 12px;
+     
+    font-size: 14px;
+    line-height: 30px;
+    left:0px;
+    cursor: pointer;
+}
+
+@media (min-width: 1px) {
+div#mypagecolumn input[type=radio],
+div#mypagecolumn input[type=checkbox] {
+        display: none;
+        margin: 0;
+    }
+div#mypagecolumn input[type=radio] + label,
+div#mypagecolumn input[type=checkbox] + label {
+        padding: 0 0 0 24px;
+    }
+div#mypagecolumn input[type=radio] + label::before,
+div#mypagecolumn input[type=checkbox] + label::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+         
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        width: 18px;
+        height: 18px;
+        margin-top: -9px;
+         
+        background: #FFF;
+    }
+div#mypagecolumn input[type=radio] + label::before {
+        border: 2px solid #ccc;
+        border-radius: 30px;
+    }
+div#mypagecolumn input[type=checkbox] + label::before {
+        border: 2px solid #ccc;
+    }
+div#mypagecolumn input[type=radio]:checked + label::after,
+div#mypagecolumn input[type=checkbox]:checked + label::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+         
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+    }
+div#mypagecolumn  input[type=radio]:checked + label::after {
+        left: 5px;
+         
+        width: 8px;
+        height: 8px;
+        margin-top: -4px;
+         
+        background: #3e86fc;
+        border-radius: 8px;
+    }
+div#mypagecolumn input[type=checkbox]:checked + label::after {
+        left: 3px;
+         
+        width: 16px;
+        height: 8px;
+        margin-top: -8px;
+         
+        border-left: 3px solid #E71063;
+        border-bottom: 3px solid #E71063;
+         
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}

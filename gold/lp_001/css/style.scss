@@ -1,0 +1,89 @@
+@import url('reset.scss');
+
+div#container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#content {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+
+  .cv_area {
+    position: relative;
+
+    a {
+      display: block;
+      width: 93%;
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &.tokuten {
+        bottom: 5%;
+      }
+
+      img {
+        animation: yureru-s 2s infinite;
+      }
+    }
+  }
+}
+
+#attentionResale {
+  border: 1px solid #ccc;
+  width: 96%;
+  margin: 1em auto;
+}
+
+#attentionResale dt {
+  font-size: 130%;
+  color: #d41001;
+  border-bottom: 1px solid #ccc;
+  background: #f5f4f3;
+  text-align: center;
+  padding: .5em 0;
+}
+
+#attentionResale dd {
+  font-size: 90%;
+  margin: 0;
+  padding: 1em;
+  text-align: left;
+}
+
+@keyframes yureru-s {
+  0% {
+    transform: translate(2px, 0px);
+  }
+
+  5% {
+    transform: translate(-2px, 0px);
+  }
+
+  10% {
+    transform: translate(2px, 0px);
+  }
+
+  15% {
+    transform: translate(-2px, 0px);
+  }
+
+  20% {
+    transform: translate(2px, 0px);
+  }
+
+  25% {
+    transform: translate(-2px, 0px);
+  }
+
+  30% {
+    transform: translate(0px, 0px);
+  }
+}

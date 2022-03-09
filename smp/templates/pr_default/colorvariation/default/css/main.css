@@ -1,0 +1,194 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+table,
+img,
+p { border: 0 }
+body {
+    font-family: 'ＭＳ Ｐゴシック',Arial,Helvetica,sans-serif, HiraKakuProN-W3,HiraKakuProN-W6;
+    width: 100%;
+    text-align: center;
+    margin: 0px 0px auto;
+    color: #555555;
+    background: #ffffff;
+    font-size: 93.5%;
+    line-height: 130%;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+img { border: 0px }
+li { list-style-type: none }
+select { border: solid 1px #ccc }
+
+/* リンク制御
+----------------------------------------------- */
+a { color: #ff9900; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/*PHOTO*/
+.picture { border: 1px solid #ccc }
+/* フロート回り込み解除
+----------------------------------------------- */
+br.clear {
+    clear: both;
+    display: none;
+    font-size: 0px;
+    line-height: 0%;
+    height: 0px;
+}
+
+/* フォント
+----------------------------------------------- */
+h1,h2,h3,h4,h5 {
+    font-size: 100%;
+    line-height: 150%;
+}
+.price {
+    color: #ff0000;
+    font-weight: bold;
+}
+.price1 {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.attention {
+    color: #535353;
+    font-size:10px;
+    text-align:left;
+    line-height:150%;
+}
+
+.mini {
+    text-align: right;
+    padding-right: 5px;
+}
+.mini1 {
+    font-size: 100%;
+    text-align: left;
+}
+.mini2 {
+    font-size: 85%;
+    text-align: left;
+    padding-left: 5px;
+}
+#point_area.smp-lp-section > .mini2 {
+    background-color: #eee;
+    margin: 2%;
+    font-size: .8rem;
+    line-height: 1.3;
+}
+#point_area.smp-lp-section .pointbox p {
+    margin: 10px 10px;
+    line-height: 1.6rem;
+}
+#point_area.smp-lp-section  .pointbox  .attention {
+    color: #000;
+}
+#point_area.smp-lp-section  .pointbox  .price {
+    color: #000;
+    margin-left: 3%;
+    margin-right: 5%;
+}
+#point_area.smp-lp-section  .pointbox  .point {
+    margin-left: 3%;
+    color: #f00;
+    font-weight: bold;
+}
+#point_area.smp-lp-section  .pointbox ul {
+    margin-top: 3%;
+    margin-left: 3%;
+}
+#point_area.smp-lp-section  .pointbox ul li {
+    margin-top: 4%;
+}
+#point_area.smp-lp-section  .pointbox ul li p {
+    margin-left: 15%;
+}
+.s_text {
+    font-size:10px;
+    text-align:left;
+}
+
+.word_wrap {
+    overflow-wrap: break-word;
+}
+
+em {
+    font-style: normal;
+    color: #ff0000;
+}
+div#red01 { color: #ff0000; }
+
+.centertd { text-align: center }
+.lefttd { text-align: left }
+.righttd { text-align: right }
+.pricetd {
+    text-align: right;
+    color: #535353;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0px;
+}
+.pricetd02 {
+    text-align: right;
+    color: #535353;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px;
+    padding: 5px 0px;
+}
+.pricetd em { font-weight: bold }
+div#completetext {
+    width: 300px;
+    margin: 15px auto 0 auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+div#completetext em { font-weight: bold }
+div#completetext p {
+    padding: 20px 0 0 0;
+    text-align: left;
+}
+
+/* 区切り線
+------------------------------------------------ */
+div.line {
+    margin: 5px 0px;
+    border: 1px solid #cccccc;
+}
+
+
+
+/* バナー
+----------------------------------------------- */
+ul#banner { padding: 15px 0 0 0 }
+#banner li { padding: 0 0 10px 0 }
+/* テキストフィールド
+----------------------------------------------- */
+input[type='text'] { border: solid 1px #ccc }
+
+/* エラー
+----------------------------------------------- */
+#compbox {
+    width: 300px;
+    margin: 5px auto;
+    padding: 50px 3px;
+    border: solid 3px #ccc;
+    text-align: center;
+}
+
+/* エラー
+----------------------------------------------- */
+div#under02column_error { }
+div#under02column_error .messagearea {
+    width: 305px;
+    margin: 15px auto 0 auto;
+    padding: 10px 5px;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+div#under02column_error .messagearea .error { padding: 120px 0; }

@@ -1,0 +1,184 @@
+/* ガイド(Block Area)
+----------------------------------------------- */
+div#guidearea {
+    width: 95%;
+    margin: 5px auto;
+    padding: 0;
+	text-align: center;
+	overflow:hidden;
+	clear:both;
+}
+div#guidearea li {
+    list-style: none;
+    font-family: HiraKakuProN-W6;
+    font-size: 11px;
+    text-align: left;
+    float: left;
+    margin: 0 0.5rem;
+}
+div#guidearea li a {
+    display: block;
+    height: 25px;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: black;
+}
+div#guidearea li.level1 {
+}
+div#guidearea li.level1_last {
+    font-weight: bold;
+    border-bottom: none;
+}
+div#guidearea li.level1 li { font-weight: normal }
+div#guidearea a.onlink { text-decoration: underline }
+div#guidearea a.onlink:link { color: #f9b33c }
+div#guidearea a.onlink:visited { color: #f9b33c }
+div#guidearea a.onlink:hover { color: #f9b33c }
+div#guidearea .cate_margin { margin-left: 10px }
+
+/* ガイドエリア共通
+----------------------------------------------- */
+
+div#guidecolumn {
+    width: 310px;
+    margin: 5px auto;
+    padding: 0;
+    text-align: left;
+}
+
+div#guidecolumn h2 {
+    padding: 0;
+    margin: 0 0 10px 0;
+    padding:10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background: #535353;
+}
+
+div#guidecolumn table {
+    margin: 0;
+    padding: 0;
+}
+div#guidecolumn table th {
+	width: 100px;
+	padding:8px;
+	font-size: 12px;
+	vertical-align:top;
+	background:#dfdfdf;
+}
+
+div#guidecolumn table td {
+    font-size: 12px;
+    padding: 8px;
+	vertical-align:top;
+background:#efefef;
+}
+
+.td_a {
+    background: #f5f4f3;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* お問い合わせ
+----------------------------------------------- */
+div#guidecolumn p {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 10px 3px;
+    text-align: left;
+}
+div#guidecolumn .em {
+    font-weight: bold;
+    color: #535353;
+    font-size: 90%;
+}
+div#guidecolumn .box120 {
+    width: 100px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+div#guidecolumn .box60 {
+    width: 55px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+div#guidecolumn .box380 {
+    width: 270px;
+    margin: 5px 0 5px 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+div#guidecolumn .area380 {
+    width: 280px;
+    height: 200px;
+    margin: 5px 6px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+div#guidecolumn .completetext {
+    width: 290px;
+    margin: 20px 5px 5px 5px;
+    padding: 5px;
+    border: 2px solid #ccc;
+}
+div#guidecolumn .zipimg img { margin: 5px 0 0 0; }
+
+/* インナー制御
+-------------------------------------*/
+.guide_inner h3 {
+    margin: 10px 0;
+    padding: 3px 5px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    background: #535353;
+}
+.guide_inner p {
+    font-size: 90%;
+    margin: 0px;
+    padding: 0px 5px 10px 5px;
+}
+
+/* インフォ制御
+----------------------------------------------- */
+.guide_info{
+    margin: 0;
+    padding: 0;
+}
+
+.guide_info_head{
+    margin: 0;
+    padding: 5px;
+    font-size: 90%;
+    font-weight: bold;
+    color: #2f2f2f;
+    background: #FBF3FF;
+}
+.guide_info_inner{
+    margin: 0;
+    padding: 5px;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: right;
+    color: #000000;
+    background: #fefefe;
+}
+.guide_info_inner02{
+    margin: 0;
+    padding: 5px;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+    background: #fefefe;
+}
+

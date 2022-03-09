@@ -1,0 +1,47 @@
+/* フレーム
+----------------------------------------------- */
+div#container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0px;
+    background: #fff;
+    text-align: left;
+}
+#container:after {
+    /* firefox背景色表示用 */
+    display: block;
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+div#leftcolumn {
+    float: left;
+    width: 166px;
+}
+div#leftcolumn h2 { padding: 15px 0 0 0 }
+div#rightcolumn {
+    float: left;
+    width: 166px;
+}
+div#rightcolumn h2 { padding: 15px 0 0 0 }
+
+/* メインコンテンツ
+----------------------------------------------- */ 
+/* 3カラム設定 */
+div#three_maincolumn {
+    float: left;
+    width: 432px;
+    padding: 15px 0 0 0;
+}
+div#three_maincolumn h2 { padding: 15px 0 0 0 }
+
+/* 2カラム設定 */
+div#two_maincolumn {
+    float: left;
+    width: 598px;
+    padding: 15px 0 0 0;
+}
+div#two_maincolumn h2 { padding: 15px 0 0 0 }
+
+/* 1カラム設定 */
+div#one_maincolumn { padding: 10px 0 0 0 }

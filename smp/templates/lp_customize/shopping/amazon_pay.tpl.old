@@ -1,0 +1,509 @@
+<script type="text/javascript" src="/js/mask.js?<!--{$smarty.const.FRONT_JS_VERSION}-->" ></script>
+<!--▼CONTENTS-->
+<div id="shoppingcolumn">
+	<div class="shopping_inner">
+
+        <!--{if $error_message}--><span class="required"><!--{$error_message}--></span><br /><!--{/if}-->
+        <!--{if $billing_agreement_ids}-->
+        <h2>配送先の選択</h2>
+        <table summary="配送先の選択">
+            <tr>
+                <th width="50">選択</th>
+                <th>配送先</th>
+            </tr>
+            <!--{foreach from=$billing_agreement_ids key=key item=val}-->
+            <tr>
+                <td class="centertd">
+                    <input type="radio" name="customer_billing_agreement_id" class="customer_billing_agreement_ids" id="bid_<!--{$val.amazon_billing_agreement_id}-->" value="<!--{$val.amazon_billing_agreement_id}-->" <!--{if $key == 0}-->checked="checked"<!--{/if}--> />
+                </td>
+                <td>
+                    <label for="bid_<!--{$val.amazon_billing_agreement_id}-->">
+                        <!--{$val.state_or_region}--><!--{$val.city}--><!--{$val.address_line_1}--><!--{$val.address_line_2}--> <!--{$val.name}-->様
+                    </label>
+                </td>
+            </tr>
+            <!--{/foreach}-->
+            <tr>
+                <td class="centertd">
+                    <input type="radio" name="customer_billing_agreement_id" id="new_billing_agreement_id" value="" />
+                </td>
+                <td>
+                    <label for="new_billing_agreement_id">別のお届け先</label>
+                </td>
+            </tr>
+        </table>
+        <!--{/if}-->
+        <div id="amazon_widget_area" <!--{if $billing_agreement_ids}-->style="display:none;"<!--{/if}-->>
+            <!--{* アドレス帳 *}-->
+            <div id="addressBookWidgetDiv"></div>
+            <!--{* お支払い方法 *}-->
+            <div id="walletWidgetDiv"></div>
+            <!--{* Amazon Pay をお支払方法に設定する *}-->
+            <div id="consentWidgetDiv"></div>
+            <div id="consentWidgetAlertDiv" style="display:none; font-weight:bold; color:red;">↑ご購入のためにチェックをお願いいたします(必須)</div>
+        </div>
+
+		<h2>ご入力内容のご確認</h2>
+		<p>
+			下記ご注文内容で送信してもよろしいでしょうか？<br />
+			よろしければ、一番下の「<!--{if $payment_type != ""}-->次へ<!--{else}-->ご注文完了ページへ<!--{/if}-->」ボタンをクリックしてください。
+		</p>
+		<form name="form1" id="form1" method="post" action="<!--{$smarty.server.PHP_SELF|escape}-->">
+			<input type="hidden" name="mode" value="confirm" />
+			<input type="hidden" name="uniqid" id="uniqid" value="<!--{$tpl_uniqid}-->" />
+            <input type="hidden" name="access_token" id="amazon_access_token" value="" />
+            <input type="hidden" name="re_billing_agreement_id" id="re_billing_agreement_id" value="" />
+
+			<h3>▼ご注文内容確認</h3>
+			<table summary="ご注文内容確認" border="0" class="bdr_top">
+				<!--{section name=cnt loop=$arrProductsClass}-->
+					<tr>
+						<td rowspan="4">
+							<span class="phototd">
+								<img src="/resize_image.php?image=<!--{$arrProductsClass[cnt].main_list_image}-->&amp;width=65&amp;height=65" alt="<!--{$arrProductsClass[cnt].name|escape}-->" />
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							商品名:<!--{* 商品名 *}--><strong><!--{$arrProductsClass[cnt].name|escape}--></strong><!--{if $reg_get == 1}-->(定期購入)<!--{/if}--><br />
+							<!--{if $arrProductsClass[cnt].classcategory_name1 != ""}-->
+								<!--{$arrProductsClass[cnt].class_name1}-->：<!--{$arrProductsClass[cnt].classcategory_name1}--><br />
+							<!--{/if}-->
+							<!--{if $arrProductsClass[cnt].classcategory_name2 != ""}-->
+								<!--{$arrProductsClass[cnt].class_name2}-->：<!--{$arrProductsClass[cnt].classcategory_name2}-->
+							<!--{/if}-->
+							<!-- ▼規格3以上▼ -->
+								<!--{foreach from=$arrProductsClass[cnt].extra_classcategory key=key item=val}-->
+									<li>
+										<!--{$val.class_name}-->：<!--{foreach from=$val.classcategory item=vval}--><!--{$vval}--><!--{/foreach}-->
+									</li>
+								<!--{/foreach}-->
+							<!-- ▲規格3以上▲ -->
+							<div class="count_down_box" id="count_down_<!--{$arrProductsClass[cnt].product_id}-->" ></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							単価:
+							<span class="pricetd">
+								<!--{if $reg_get == 1 && $regular_product.type == 1}-->
+									<!--{$tpl_regular_add_price|string_format:"%d"|number_format}-->円
+								<!--{else}-->
+									<!--{if $arrProductsClass[cnt].price02 != ""}-->
+                                        <!--{$arrProductsClass[cnt]|@calc_tax_include_price:$arrInfo|number_format|escape}-->円
+									<!--{/if}-->
+								<!--{/if}-->
+							</span>
+							/個数:
+							<span id="quantity"><!--{$arrProductsClass[cnt].quantity|string_format:"%d"|number_format}-->個</span>
+						</td>
+					</tr>
+                    <!--{if $arrProductsClass[cnt].returning}-->
+                        <tr>
+                            <td>返品特約:
+                                <!--{if $arrProductsClass[cnt].returning.img}-->
+                                    <img src="/upload/save_image/<!--{$arrProductsClass[cnt].returning.img.0}-->" />
+                                <!--{else}-->
+                                    <!--{$arrProductsClass[cnt].returning.name.0}-->
+                                <!--{/if}-->
+                            </td>
+                        </tr>
+                    <!--{/if}-->
+					<tr>
+						<td>小計:<span class="pricetd">
+							<!--{if $reg_get == 1 && $regular_product.type == 1}-->
+								<!--{$tpl_regular_add_price|string_format:"%d"|number_format}-->円
+							<!--{else}-->
+								<!--{math equation="x + y" x=$arrProductsClass[cnt].total_pretax y=$tpl_regular_add_price assign="total_pretax_view"}--><!--{$total_pretax_view|string_format:"%d"|number_format}-->円
+							<!--{/if}-->
+                            </span>
+						</td>
+					</tr>
+				<!--{/section}-->
+			</table>
+
+            <table summary="ご注文内容確認">
+				<!--{if $coupon_tr}-->
+					<tr>
+						<th class="resulttd">クーポン適用</th>
+					</tr>
+					<tr>
+						<td class="pricetd">-<!--{$coupon_tr|string_format:"%d"|number_format}-->円</td>
+					</tr>
+				<!--{/if}-->
+					<tr>
+						<th class="resulttd">小 計</th>
+					</tr>
+					<tr>
+						<td class="resulttd_right" >
+							<!--{if $reg_get == 1 && $regular_product.type == 1}-->
+								<!--{$tpl_regular_add_price|string_format:"%d"|number_format}-->円
+							<!--{else}-->
+								<!--{math equation="x + y" x=$tpl_total_pretax y=$tpl_regular_add_price assign="total_pretax_view2"}--><!--{$total_pretax_view2|string_format:"%d"|number_format}-->円
+							<!--{/if}-->
+						</td>
+					</tr>
+				<!--{if $point_flg != 2 && $reg_get != 1 && !$use_code_coupon}-->
+					<tr>
+						<th class="resulttd">値引き（ポイントご使用時）</th>
+					</tr>
+					<tr>
+						<td class="resulttd_right">
+						<!--{assign var=discount value=`$arrData.use_point*$smarty.const.POINT_VALUE`}-->
+						-<!--{$discount|string_format:"%d"|number_format|default:0}-->円
+						</td>
+					</tr>
+				<!--{/if}-->
+				<tr>
+					<th class="resulttd">送 料</th>
+				</tr>
+				<tr>
+					<td class="resulttd_right" id="deliv_fee"><!--{$arrData.deliv_fee|string_format:"%d"|number_format}-->円</td>
+				</tr>
+                <tr>
+                    <th class="resulttd">離島手数料</th>
+                </tr>
+                <tr>
+                    <td class="resulttd_right" id="relay_fee"><!--{$arrData.relay_fee|string_format:"%d"|number_format}-->円</td>
+                </tr>
+            </table>
+
+            <div class="totalbg">合計
+                <div class="reg_price">
+					<em>
+						<!--{if $reg_get == 1 && $regular_product.type == 1}-->
+							<!--{math equation="a + b + c + d" a=$arrData.deliv_fee b=$tpl_regular_add_price c=$arrData.charge d=$arrData.relay_fee assign="totalview"}-->
+							<!--{$totalview|string_format:"%d"|number_format}-->円
+						<!--{else}-->
+							<!--{math equation="x + y" x=$arrData.payment_total y=$tpl_regular_add_price assign="totalview"}--><!--{$totalview|string_format:"%d"|number_format}-->円
+						<!--{/if}-->
+					</em>
+				</div>
+             </div>
+
+             <!--{if $total_amount_flg && $regular_bind_on_flg}-->
+			<div class="totalreg">
+				定期<!--{$regular_bind_count}-->回総合計
+				<div class="reg_price"><!--{$total_amount|string_format:"%d"|number_format}-->円</div>
+            </div>
+			<!--{/if}-->
+
+            <!--{if $total_amount_flg}-->
+            <div class="reg_memo">
+                <p>
+                    <!--{eval var=$regular_important_matter}-->
+                </p>
+            </div>
+            <!--{/if}-->
+
+            <!--{if $lp_order}-->
+                <table>
+                    <tr>
+                        <td class="resulttd_right">
+                            <a href="./lp.php"><img src="<!--{$TPL_DIR}-->img/shopping/confirm_change_btn.png" /></a>
+                        </td>
+                    </tr>
+                </table>
+            <!--{/if}-->
+
+    <!--{if $point_flg != 2 && $reg_get != 1 && !$use_code_coupon && $customer}-->
+    <div class="shopping_inner">
+        <h3>▼ポイント確認</h3>
+        <table summary="ポイント確認" class="delivname">
+            <tbody>
+                <tr>
+                    <th class="resulttd">ご注文前のポイント</th>
+                </tr>
+                <tr>
+                    <td class="resulttd_right"><!--{$tpl_user_point|string_format:"%d"|number_format|default:0}-->Pt</td>
+                </tr>
+                <tr>
+                    <th class="resulttd">ご使用ポイント</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="use_point" value="0" id="use_point" />Pt
+                        <input type="hidden" name="add_point" value="<!--{$arrData.add_point|default:0}-->" id="add_point" />
+                        <span class="attention" id="use_point_err"><!--{$arrErr.use_point}--></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="resulttd">今回加算されるポイント</th>
+                </tr>
+                <tr>
+                    <td class="resulttd_right">+<!--{$arrData.add_point|string_format:"%d"|number_format|default:0}-->Pt</td>
+                </tr>
+                <tr>
+                    <th class="resulttd"><!--{if $tpl_is_view_add_purchase_point_timing == true}--><!--{$tpl_add_purchase_point_timing_text}--><!--{else}-->ご注文完了後<!--{/if}-->のポイント</th>
+                </tr>
+                <tr>
+                    <!--{assign var=total_point value=`$tpl_user_point+$arrData.add_point`}-->
+                    <td class="resulttd_right" id="after_point"><!--{$total_point|string_format:"%d"|number_format}-->Pt</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--{/if}-->
+
+    <div class="shopping_inner">
+        <h3>▼お届け先情報</h3>
+        <table summary="お届け先情報">
+            <tbody>
+                <tr>
+                    <th class="resulttd">お名前</th>
+                </tr>
+                <tr>
+                    <!--{if $amazon_user_name_modification_flg == 1}-->
+                    <td>
+                        <input type="text" name="deliv_name01" id="deliv_name01" value="<!--{$customer|@null_coalescing:"name01"|escape}-->" />
+                        <input type="text" name="deliv_name02" id="deliv_name02" value="<!--{$customer|@null_coalescing:"name02"|escape}-->" />
+                        <!--{if $arrErr.deliv_name01}-->
+                        <br /><span class="required"><!--{$arrErr.deliv_name01}--></span>
+                        <!--{/if}-->
+                        <!--{if $arrErr.deliv_name02}-->
+                        <br /><span class="required"><!--{$arrErr.deliv_name02}--></span>
+                        <!--{/if}-->
+                    </td>
+                    <!--{else}-->
+                    <td class="resulttd_right" id="order_name"><!--{$customer|@null_coalescing:"name01"|escape}--><!--{$customer|@null_coalescing:"name02"|escape}--></td>
+                    <!--{/if}-->
+                </tr>
+                <!--{if $amazon_user_name_modification_flg == 1}-->
+                <tr>
+                    <th class="resulttd">お名前<br />（ﾌﾘｶﾞﾅ）</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="deliv_kana01" id="deliv_kana01" value="<!--{$customer|@null_coalescing:"kana01"|escape}-->" />
+                        <input type="text" name="deliv_kana02" id="deliv_kana02" value="<!--{$customer|@null_coalescing:"kana02"|escape}-->" />
+                        <!--{if $arrErr.deliv_kana01}-->
+                        <br /><span class="required"><!--{$arrErr.deliv_kana01}--></span>
+                        <!--{/if}-->
+                        <!--{if $arrErr.deliv_kana02}-->
+                        <br /><span class="required"><!--{$arrErr.deliv_kana02}--></span>
+                        <!--{/if}-->
+                    </td>
+                </tr>
+                <!--{/if}-->
+                <tr>
+                    <th class="resulttd">郵便番号</th>
+                </tr>
+                <tr>
+                    <td class="resulttd_right" id="order_zip">〒<!--{$customer|@null_coalescing:"zip01"|escape}-->-<!--{$customer|@null_coalescing:"zip02"|escape}--></td>
+                </tr>
+                <tr>
+                    <th class="resulttd">住 所</th>
+                </tr>
+                <tr>
+<!--{assign var=customer_pref value=$customer|@null_coalescing:"pref"}-->
+                    <td class="resulttd_right" id="order_addr"><!--{$arrPref|@null_coalescing:$customer_pref}--><!--{$customer|@null_coalescing:"addr01"|escape}--><!--{$customer|@null_coalescing:"addr02"|escape}--></td>
+                </tr>
+                <tr>
+                    <th class="resulttd">電話番号</th>
+                </tr>
+                <tr>
+                    <td class="resulttd_right" id="order_tel"><!--{$customer|@null_coalescing:"tel01"}-->-<!--{$customer|@null_coalescing:"tel02"}-->-<!--{$customer|@null_coalescing:"tel03"}--></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+	<div class="shopping_inner">
+		<h3>▼お支払方法・お届け時間の指定・その他</h3>
+		<table summary="お支払方法・お届け時間の指定・その他お問い合わせ" class="delivname">
+			<tbody>
+                <!--{if $reg_get != 1}-->
+                <tr>
+                    <th class="resulttd">お届け日</th>
+                </tr>
+                <tr>
+                    <td id="deliv_date_area">
+                        ご指定いただけません
+                    </td>
+                </tr>
+                <!--{/if}-->
+                <tr>
+                    <th class="resulttd">お届け時間</th>
+                </tr>
+				<tr>
+					<td id="deliv_time_id_area">
+                        ご指定いただけません
+                    </td>
+				</tr>
+				<!--{if $reg_get == 1}-->
+					<tr>
+						<th class="resulttd">お届けサイクル</th>
+					</tr>
+					<tr>
+						<td>
+                            <!--{assign var=key1 value="cycle_date:monthly"}-->
+                            <!--{assign var=key2 value="cycle_date:day"}-->
+                            <!--{if $regular_product.$key1 && $regular_product.$key2}-->
+                            <div class="btn_area">
+                                <label><input type="radio" name="cycle_type" class="cycle_type" id="cycle_type1" value="1">日付で指定</label><br />
+                                <select name="cycle_date_monthly" class="cycle_select" id="cycle_date_monthly">
+                                    <!--{foreach from=$regular_product.$key1 key=key item=val}-->
+                                    <option value="<!--{$val}-->"><!--{$common_regular_param.cycle_monthly.$val}--></option>
+                                    <!--{/foreach}-->
+                                </select>
+                                <select name="cycle_date_day" class="cycle_select" id="cycle_date_day">
+                                    <!--{foreach from=$regular_product.$key2 key=key item=val}-->
+                                    <option value="<!--{$val}-->"><!--{$common_regular_param.cycle_date_day.$val}--></option>
+                                    <!--{/foreach}-->
+                                </select>にお届け
+                            </div>
+                            <!--{/if}-->
+
+                            <!--{assign var=key1 value="cycle_week:monthly"}-->
+                            <!--{assign var=key2 value="cycle_week:ordinal"}-->
+                            <!--{assign var=key3 value="cycle_week:week"}-->
+                            <!--{if $regular_product.$key1 && $regular_product.$key2 && $regular_product.$key3}-->
+                            <div class="btn_area">
+                                <label><input type="radio" name="cycle_type" class="cycle_type" id="cycle_type2" value="2">曜日で指定</label><br />
+                                <select name="cycle_week_monthly" class="cycle_select" id="cycle_week_monthly">
+                                    <!--{foreach from=$regular_product.$key1 key=key item=val}-->
+                                    <option value="<!--{$val}-->"><!--{$common_regular_param.cycle_monthly.$val}--></option>
+                                    <!--{/foreach}-->
+                                </select>
+                                <select name="cycle_week_ordinal" class="cycle_select" id="cycle_week_ordinal">
+                                    <!--{foreach from=$regular_product.$key2 key=key item=val}-->
+                                    <option value="<!--{$val}-->"><!--{$common_regular_param.cycle_week_ordinal.$val}--></option>
+                                    <!--{/foreach}-->
+                                </select>
+                                <select name="cycle_week_week" class="cycle_select" id="cycle_week_week">
+                                    <!--{foreach from=$regular_product.$key3 key=key item=val}-->
+                                    <option value="<!--{$val}-->"><!--{$common_regular_param.cycle_week.$val}--></option>
+                                    <!--{/foreach}-->
+                                </select>にお届け
+                            </div>
+                            <!--{/if}-->
+
+                            <!--{assign var=key1 value="cycle_interval:interval"}-->
+                            <!--{if $regular_product.$key1}-->
+                            <div class="btn_area">
+                                <label><input type="radio" name="cycle_type" class="cycle_type" id="cycle_type3" value="3">間隔で指定</label><br />
+                                初回お届け日
+                                <select name="cycle_interval_start_date" class="cycle_select" id="cycle_interval_start_date">
+                                    <!--{section name=cnt start=0 loop=$regular_config.interval_range}-->
+                                    <!--{assign var=time_ts value="+`$smarty.section.cnt.index` day"|strtotime:$regular_config.allowed_first_interval_date_ts}-->
+                                    <!--{assign var=time value=$time_ts|date_format:"%Y-%m-%d"}-->
+                                    <option value="<!--{$time}-->"><!--{$time_ts|date_format:"%Y年%m月%d日"}--></option>
+                                    <!--{/section}-->
+                                </select>から<br />
+                                <select name="cycle_interval_interval" class="cycle_select" id="cycle_interval_interval">
+                                    <!--{foreach from=$regular_product.$key1 key=key item=val}-->
+                                    <option value="<!--{$val}-->" <!--{if $arrForm.cycle_interval_interval == $val}-->selected="selected"<!--{/if}-->><!--{$common_regular_param.cycle_interval.$val}--></option>
+                                    <!--{/foreach}-->
+                                </select>間隔でお届け
+                            </div>
+                            <!--{/if}-->
+
+                            <div class="btn_area">
+                                <!--{if $first_auto == 1}-->
+                                <label id="quick_flg_area"><input type="checkbox" name="first_quick_flg" id="first_quick_flg" value="1" />初回のみ即日発送を希望 ※翌営業日の発送になる場合もあります</label>
+                                <!--{else}-->
+                                <label id="quick_flg_area"><input type="checkbox" name="quick_flg" id="quick_flg" value="1" />初回は最短でお届け希望</label>
+                                <!--{/if}-->
+                            </div>
+                            <div class="btn_area">
+                                初回お届け日：<span id="regular_cycle_first"></span><br />
+                                2回目お届け日：<span id="regular_cycle_second"></span>
+                            </div>
+                        </td>
+					</tr>
+				<!--{/if}-->
+                <tr>
+                    <th class="resulttd">その他お問い合わせ</th>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="message" cols="34" rows="8" class="area320"><!--{$arrForm[$key].value|escape}--></textarea>
+                        <span class="attention"> （<!--{$smarty.const.LTEXT_LEN}-->文字まで）</span>
+                    </td>
+                </tr>
+                <!--{* 非会員なら登録させます *}-->
+                <!--{if !$customer}-->
+                <tr>
+                    <td>
+                        <label for="agree">
+                            <input type="checkbox" name="agree" value="1" id="c_agree" />
+                            <span><a href="/entry/kiyaku_popup.php" id="rule_text_link" target="n">利用規約</a>に同意して会員登録する<span style="color:red; font-weight:bold;">(必須)</span></span>
+                        </label>
+                        <br />
+                        <label for="mailmaga_flg">
+                            <input type="checkbox" name="mailmaga_flg" id="mailmaga_flg" value="1" />お得な情報を受け取る
+                        </label>
+                    </td>
+                </tr>
+                <!--{else}-->
+                    <input type="checkbox" name="agree" value="1" id="c_agree" checked="checked" style="display:none;" />
+                <!--{/if}-->
+			</tbody>
+		</table>
+	</div>
+
+	</form>
+
+    <div style="color:red; text-align: center; font-weight:bold;" id="btn_next_p">
+    ↑未確認項目があるため、まだ注文できません。<br />
+    入力フォームをご確認ください。
+    </div>
+
+    <div id="error_message_area"></div>
+
+    <ul class="btn_area" id="btn_next_area">
+        <li class="prv_btn">
+            <a href="<!--{if $lp_order}-->./lp.php<!--{else}--><!--{$cart_url|escape}--><!--{/if}-->">戻る<input type="hidden" name="back03" id="back03" /></a>
+        </li>
+        <li class="nx_btn" id="btn_next" style="display:none;">
+            <a href="javascript:void(0);" onclick="AmazonPaySubmit('form1');">注文を確定する</a>
+        </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    setAjaxUrl('<!--{$smarty.const.SSL_URL}-->shopping/amazon_pay_ajax.php');
+    setSellerId('<!--{$amazon_merchant_id}-->');
+
+    if ($('#access_token').val()) {
+        var accessToken = $('#access_token').val();
+    }
+
+    $('.cycle_type, #quick_flg_area').click(function(){
+        showSubmit(1);
+        getRegularDate($('.cycle_type:checked').val());
+    });
+
+    $('#c_agree').click(function(){
+        showSubmit(<!--{if $reg_get == 1}-->1<!--{else}-->0<!--{/if}-->);
+    });
+
+    $('.cycle_select').change(function(){
+        getRegularDate($(".cycle_type:checked").val());
+    });
+
+    $('.customer_billing_agreement_ids').click(function(){
+        setConsentFlg(false);
+        $('#btn_next_area').show();
+        $('#amazon_widget_area').hide();
+        $('#re_billing_agreement_id').val($(this).val());
+        getData(accessToken, <!--{if $reg_get == 1}-->1<!--{else}-->0<!--{/if}-->, $(this).val());
+        showSubmit(<!--{if $reg_get == 1}-->1<!--{else}-->0<!--{/if}-->);
+    });
+
+    $('#new_billing_agreement_id').click(function(){
+        $('#amazon_widget_area').show();
+        $('#re_billing_agreement_id').val('');
+        AmazonPaymentsAddressBook(accessToken, <!--{if $reg_get == 1}-->1<!--{else}-->0<!--{/if}-->, 0, true);
+    });
+
+    <!--{if $billing_agreement_ids}-->
+        $('#c_agree').prop('checked', true); // ios対策
+        $('#re_billing_agreement_id').val($('.customer_billing_agreement_ids:checked').val());
+        getData(accessToken, <!--{if $reg_get == 1}-->1<!--{else}-->0<!--{/if}-->, $('#re_billing_agreement_id').val());
+        showSubmit(<!--{if $reg_get == 1}-->1<!--{else}-->0<!--{/if}-->);
+    <!--{else}-->
+        AmazonPaymentsAddressBook(accessToken, <!--{if $reg_get == 1}-->1<!--{else}-->0<!--{/if}-->, 0, true);
+    <!--{/if}-->
+</script>

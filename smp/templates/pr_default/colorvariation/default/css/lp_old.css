@@ -1,0 +1,159 @@
+#smp-lpshoppingcolumn {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+#smp-lpshoppingcolumn dl {}
+#smp-lpshoppingcolumn dl dt {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#smp-lpshoppingcolumn dl dd {
+    margin-bottom: 5px;
+    letter-spacing: 0;
+}
+#smp-lpshoppingcolumn dl dd em {
+    display: block;
+    font-size: 0.7rem;
+}
+#smp-lpshoppingcolumn select {
+    width: 100%;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+#smp-lpshoppingcolumn button {
+    width: 100%;
+    padding: 7px 0;
+}
+#smp-lpshoppingcolumn input[type="text"],
+#smp-lpshoppingcolumn input[type="password"] {
+    width: 100%;
+    padding: 3px;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+.smp-lp-section {
+    padding: 2%;
+}
+.smp-lp-section h2 {
+    margin: 5px 0;
+    padding: 7px;
+    background: #ff2e8b;
+    color: rgb(255,255,255);
+    text-align: center;
+    border-radius: 5px;
+}
+.smp-lp-classcategory {
+    padding: 2%;
+    border: 1px solid rgb(200,200,200);
+}
+.smp-lp-submit {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background: rgb(255,0,0);
+    color: rgb(255,255,255);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.smp-lp-confirm {
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.smp-lp-username,
+.smp-lp-zipcode,
+.smp-lp-tel,
+.smp-lp-birthday,
+.smp-lp-credit,
+.smp-lp-expiration {
+    display: -webkit-box;
+    display: -moz-box;
+}
+.smp-lp-username li,
+.smp-lp-zipcode li {
+    width: 45%;
+    margin-right: 10px;
+    list-style: none;
+}
+.smp-lp-tel li,
+.smp-lp-birthday li {
+    width: 25%;
+    margin-right: 10px;
+    list-style: none;
+}
+.smp-lp-credit li {
+    width: 20%;
+    margin-right: 10px;
+    list-style: none;
+}
+.smp-lp-expiration li {
+    width: 30%;
+    margin-right: 10px;
+    list-style: none;
+}
+.smp-lp-card th,
+.smp-lp-card td {
+    padding: 0 2px;
+    font-size: .8rem;
+}
+.smp-lp-required {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0 4px;
+    color: rgb(255,255,255);
+    background: rgb(255,0,0);
+    border-radius: 3px;
+    font-size: .7rem;
+    font-weight: normal;
+    line-height: 20px;
+}
+.smp-lp-error {
+    display: block;
+    color: rgb(255,255,255);
+    background: rgb(255,0,0);
+}
+.smp-lp-card {
+    border-collapse: collapse;
+    text-align: center;
+}
+.smp-lp-card th,
+.smp-lp-card td {
+    border: 1px solid #cccccc;
+}
+.smp-lp-payment_image {
+    max-width: 100%;
+}
+/* カレンダー
+----------------------------------------------- */
+.smp-block-calendar {
+    width: 100%;
+    text-align: center;
+}
+.smp-block-calendar table {
+    width: 310px;
+    border-collapse: collapse;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+.smp-block-calendar th,
+.smp-block-calendar td {
+    padding: 4px;
+    border: 1px solid #cccccc;
+}
+.smp-block-calendar th {
+    color: #FFFFFF;
+    background: #ea68a2;
+}
+.smp-block-calendar .off {
+    color: #ff0000;
+    background: #ffd3d8;
+}
+.smp-block-calendar caption {
+    color: #DD4400;
+}

@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* MYPAGEのみ読まれる
+----------------------------------------------- */
+
+div#container {
+    width:100% !important;
+}

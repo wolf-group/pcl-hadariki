@@ -1,0 +1,2 @@
+AddDefaultCharset Shift_JIS
+AddType "text/html; charset=Shift_JIS" .html .htm

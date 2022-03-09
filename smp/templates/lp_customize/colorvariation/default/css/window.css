@@ -1,0 +1,280 @@
+@charset "utf-8";
+/* 商品詳細拡大写真
+----------------------------------------------- */
+div#bigimage {
+    width: 520px;
+    margin: 15px auto 0 auto;
+    background-color: #ffffff;
+}
+div#bigimage img {
+    padding: 10px;
+    background-color: #ffffff;
+}
+/* カート拡大写真
+----------------------------------------------- */
+div#cartimage {
+    width: 280px;
+    margin: 15px auto 0 auto;
+    background-color: #ffffff;
+}
+div#cartimage img {
+    padding: 10px;
+    background-color: #ffffff;
+}
+/* お客様の声の書き込み・新しいお届け先の追加・変更
+----------------------------------------------- */
+div#windowcolumn {
+    width: 310px;
+    margin: 5px auto;
+    padding: 0;
+    text-align: left;
+}
+div#windowcolumn h2 {
+    margin: 0 auto;
+    padding:10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background:#535353;
+}
+div#windowcolumn p.windowtext {
+    margin: 5px 0;
+    padding: 0 5px;
+    font-size: 12px;
+    text-align: left;
+}
+div#windowcolumn table {
+    width: 310px;
+    margin:0 auto;
+    padding: 0;
+    font-size: 12px;
+}
+div#windowcolumn table th {
+    width: 80px;
+    font-size: 12px;
+}
+div#windowcolumn .zipimg img { margin: 5px 0 0 0 }
+div#windowcolumn .box350 {
+    width: 180px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+div#windowcolumn .area350 {
+    width: 180px;
+    height: 120px;
+    border: 1px solid #ccc;
+}
+div#windowcolumn .box120 {
+    width: 65px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+div#windowcolumn .box60 {
+    width: 50px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+div#windowcolumn .box300 {
+    width: 200px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+div#windowcolumn .btn {
+    margin: 15px 0 15px 0;
+    text-align: center;
+}
+div#windowcolumn #completebox01 {
+    width: 310px;
+    margin: 10px 0px 10px 0px;
+    font-size: 12px;
+}
+div#windowcolumn p {
+    font-size: 12px;
+    padding: 3px 5px;
+    text-align: left;
+}
+div#windowcolumn .tdgray {
+    margin: 0px;
+    padding: 0px 5px 0px 5px;
+    text-align: left;
+    background-color: #f5f4f3;
+}
+div#windowcolumn .attention01 {
+    font-size: 12px;
+    color: #535353;
+    border-top: 1px dashed #cccccc;
+    border-bottom: 1px dashed #cccccc;
+    margin: 5px 0px;
+    padding: 3px;
+}
+div#windowcolumn .attention02 {
+    font-size: 14px;
+    color: #535353;
+    margin: 5px 0px;
+    padding: 5px;
+    border-bottom: 1px dashed #cccccc;
+}
+div#windowcolumn .box310 {
+    width: 240px;
+    height: 25px;
+    border: solid 1px #ccc;
+}
+
+/* ディティールインフォ制御
+----------------------------------------------- */
+.detail_info{
+    margin: 0;
+    padding: 0;
+}
+
+.detail_info_head{
+    margin: 0;
+    padding: 5px;
+    font-size: 90%;
+    font-weight: bold;
+    color: #2f2f2f;
+    background: #FBF3FF;
+}
+.detail_info_inner{
+    margin: 0;
+    padding: 5px;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: right;
+    color: #000000;
+    background: #fefefe;
+}
+.detail_info_inner02{
+    margin: 0;
+    padding: 5px;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+    background: #fefefe;
+}
+/* 郵便番号検索
+----------------------------------------------- */
+div#zipsearchcolumn {
+    width: 460px;
+    margin: 15px auto 0 auto;
+    background-color: #fff;
+    border-top: 5px solid #29abe2;
+    border-bottom: 5px solid #29abe2;
+}
+div#zipsearchcolumn h2 {
+    width: 460px;
+    margin: 0 0 15px 0;
+}
+div#zipsearcharea {
+    width: 460px;
+    margin: 15px auto 0 auto;
+}
+div#zipsearchcolumn .btn {
+    margin: 15px 0 30px 0;
+    text-align: center;
+}
+div#zipsearcharea #completebox p {
+    padding: 60px 5px;
+    text-align: center;
+}
+
+/*パスワードを忘れた方
+----------------------------------------------- */
+div#windowcolumn .fg_ttl {
+    margin: 5% auto 1% auto;
+    padding: 5px 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background: none;
+    border-bottom: 2px solid #333;
+}
+
+/*説明文*/
+div#windowcolumn .fg_msg{
+	padding:1% 0;
+	font-size: 100%;
+	line-height: 1.5em;
+}
+
+div#windowcolumn .fg_msg p {
+    font-size: 100% !important;
+    padding: 3px 0;
+    text-align: left;
+}
+
+div#windowcolumn .fg_msg span{
+	color:#d00000;
+	font-weight:500;
+	letter-spacing: 0.001em;
+}
+
+div#windowcolumn .fg_msg .ft_red {
+    font-weight: 600;
+    font-size: 125%;
+    letter-spacing: 0.001em;
+}
+
+div#windowcolumn .fg_msg .attention_box {
+    margin-top: 0.5%;
+    padding: 2%;
+	border:2px solid #37a544;
+	border-radius: 3px;
+}
+div#windowcolumn .fg_msg .attention_box .attention {
+    color: #37a544;
+    font-size: 95%;
+    font-weight: 600;
+    line-height: 1rem;
+    letter-spacing: 0.05em;
+}
+
+/*入力フォーム*/
+div#windowcolumn #fg_box {
+    margin: 15px auto;
+    padding: 1em 1em 1em 1em !important;
+    border-radius: 3px;
+    background: #f6f6f6;
+	font-weight: 600;
+}
+
+div#windowcolumn #fg_box p{
+	text-align: left;
+	padding:5px 0 !important;
+}
+
+div#windowcolumn #fg_box .mail {
+	margin: 3% auto 0 auto;
+    padding: 0;
+}
+div#windowcolumn #fg_box .pass{
+	margin: 3% auto 0 auto;
+    padding: 0;
+}
+
+div#windowcolumn #fg_box .box310 {
+    width: 95% !important;
+    height: 30px;
+    font-size: 14px;
+    padding: 0 5px;
+    border: solid 1px #ccc;
+}
+div#windowcolumn #fg_box span {
+	font-size: 100%;
+}
+
+div#windowcolumn #fg_box .attention {
+    color: #c30 !important;
+    text-align: left !important;
+    line-height: 150% !important;
+    font-size: 90% !important;
+}
+
+div#windowcolumn .btn_area {
+    width: 100%;
+    margin: 10px auto 20px auto;
+    padding: 0;
+}

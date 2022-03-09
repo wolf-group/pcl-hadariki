@@ -1,0 +1,255 @@
+/* ショッピング（ページ）
+----------------------------------------------- */
+div#shoppingcolumn {
+    margin: 10px auto 0 auto;
+}
+div#shoppingcolumn p{
+    margin: 0 auto;
+    font-size: 90%;
+    color: #333333;
+}
+div#shoppingcolumn table {
+    width: 100%;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 0;
+}
+div#shoppingcolumn th {
+    padding: 5px;
+    color:#2f2f2f;
+    background: #fbf3ff;
+}
+
+div#shoppingcolumn td {
+    padding: 5px;
+    color:#000000;
+}
+
+div#shoppingcolumn .resulttd {
+    padding:3px 5px;
+    color: #2f2f2f;
+    text-align:left;
+    background: #f6f6f6;
+}
+
+/* ショッピング（ページ内制御）
+----------------------------------------------- */
+
+.shopping_inner {
+    margin: 10px auto 0 auto;
+    padding: 5px;
+}
+.shopping_inner p{
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 90%;
+    color: #333333;
+}
+.shopping_inner h2{
+    margin: 0 auto;
+	padding:10px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background:#535353;
+}
+.shopping_inner h3{
+	margin:10px auto;
+	padding:0;
+	font-size:14px;
+    font-weight:bold;
+	color:#2f2f2f;
+}
+
+.inputbox{
+	margin:10px auto;
+	padding:0;
+    width: 300px;
+}
+
+.input_tx {
+    padding: 5px;
+    font: 12px;
+    /*width: 100px;*/
+    color: #000000;
+}
+
+.resulttd {
+    width: 310px;
+    margin: 5px auto 0 auto;
+    padding: 10px 5px;
+    text-align: left;
+    background: #e9f4f9;
+}
+
+.resulttd_right {
+    width: 100%;
+    margin: 5px auto 0 auto;
+    padding: 10px 5px;
+    text-align: right;
+    font-weight:bold;
+}
+
+/* カート内部（カートの中ページ）
+----------------------------------------------- */
+.in_cart_all {
+    margin: 0 0 10px 0;
+    padding: 5px;
+    overflow: hidden;
+    clear: both;
+    border-bottom: 1px dashed #2f2f2f;
+}
+
+.cart_pic {
+    width: 65px;
+    margin: 5px;
+    padding: 0;
+    float: left;
+}
+.cart_num {
+    width: 90px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.cart_delete {
+    width: 90px;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.cart_info{
+    margin: 0;
+    padding: 0;
+    width: 210px;
+    float: right;
+}
+.cart_total{
+    margin: 5px 0;
+    padding: 10px;
+    background: #ebebeb;
+}
+.point_info{
+    margin: 5px 0;
+    padding: 0;
+    float: left;
+    clear: both;
+}
+.explanation{
+    font-size: 10px;
+    line-height: 120%;
+}
+
+
+div#shoppingcolumn .bdr_top{border-top:1px solid #ccc;}
+
+/*商品合計*/
+div#shoppingcolumn .totalbg {
+    background-color: #fef0f0;
+    border: 3px solid #ffd4d4;
+    padding: 3px;
+}
+
+
+/*定期●回総合計*/
+div#shoppingcolumn .regular_dt {
+    border-radius: 5px;
+    border: 3px solid #eee;
+    margin: 15px auto 0 auto;
+    padding:2.5%;
+    width: 90%;
+}
+div#shoppingcolumn .regular_dt h3 {
+    margin: 0 !important;
+    padding: 0;
+    font-weight: 600 !important;
+    font-size: 1em;
+    color: #000;
+}
+
+div#shoppingcolumn .regular_dt h4 {
+    margin: 0 !important;
+    padding: 10px 0 0 0;
+    font-weight: 450 !important;
+    font-size: 1em;
+    color: #000;
+}
+
+div#shoppingcolumn .regular_dt .ttl {
+    width: 96%;
+    background: #767676;
+    color: #fff;
+    text-align: left !important;
+    margin: 5px auto 0 auto !important;
+    padding: 5px 5px 5px 10px;
+    letter-spacing: 0.05em;
+    font-size: 1em;
+    display: inline-block;
+    font-weight: 500;
+}
+
+div#shoppingcolumn .regular_dt table .bd_rt {border-right: 1px solid #dedede;}
+div#shoppingcolumn .regular_dt table .cttd {text-align: center;}
+div#shoppingcolumn .regular_dt table .rttd {text-align: right;}
+div#shoppingcolumn .regular_dt table .bg_gray{background:#f6f6f6;}
+div#shoppingcolumn .regular_dt table .bd_none {border-bottom: none !important;}
+
+div#shoppingcolumn .regular_dt table {
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 0;
+    border-top: 1px solid #ccc;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+}
+div#shoppingcolumn .regular_dt table th {
+    text-align: left;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+    color: rgb(0,0,0);
+    background: #fff;
+    font-weight: normal;
+}
+div#shoppingcolumn .regular_dt table td{
+    padding:5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+div#shoppingcolumn .totalreg {
+    margin: 0 auto;
+    background-color: #fff;
+    border-bottom: 5px solid #ccc;
+    color: #000;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+div#shoppingcolumn .totalreg2 {
+    margin: -1px auto 0 auto;
+    background-color: rgb(240, 249, 252);
+    border: solid 5px rgb(212, 244, 254);
+    color: #000;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+div#shoppingcolumn .reg_price {
+    font-size: 15px;
+    float:right;
+}
+
+div#shoppingcolumn .reg_memo {
+    margin: 10px auto 0 auto;
+    font-size: 85%;
+    text-align: left;
+    line-height: 1.1rem;
+    letter-spacing: 0.001rem;
+}
+div#shoppingcolumn .reg_memo p {
+    background: #f6fef0;
+    padding: 10px;
+    border-radius: 5px;
+}
+

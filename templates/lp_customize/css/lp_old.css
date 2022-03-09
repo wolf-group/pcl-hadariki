@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* 共通設定
+----------------------------------------------- */
+#product_id {
+    font-size: 200%;
+}
+#quantity {
+    font-size: 200%;
+}
+select {
+    float: none;
+}
+
+/* フォーム
+----------------------------------------------- */
+#lpshoppingcolumn {
+    width: 100%;
+    margin: 0 auto;
+}
+#lpshoppingcolumn table{
+    width: 100%;
+    margin: 15px auto 0 auto;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-collapse: collapse;
+    text-align: left;
+}
+#lpshoppingcolumn table th{
+    padding: 8px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: rgb(0,160,230);
+    color: rgb(255,255,255);
+    font-weight: bold;
+    text-align: left;
+}
+#lpshoppingcolumn table td {
+    padding: 8px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 定期カレンダー
+----------------------------------------------- */
+#block-calendar {
+    width: 28%;
+    float: left;
+    margin: 0 2% 2%;
+}
+#block-calendar table {
+    margin: 0;
+}
+#block-calendar table th {
+    background: rgb(80,200,255) !important;
+}
+#block-calendar table td {
+    padding: 2px !important;
+}
+
+/* クラス
+----------------------------------------------- */
+.input_error {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 10px;
+    background: rgb(255,0,0);
+    color: rgb(255,255,255);
+}
+.lp_button {
+    padding: 7px 14px;
+    background: rgb(230,230,230) !important;
+    font-weight: bold;
+}
+.lp_button_submit {
+    line-height: 3em !important;
+    font-size: 24px;
+    font-weight: bold;
+}
+.lp_submit_area {
+    display: block;
+    margin: 20px 0;
+}
+.lp_submit_area li {
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    line-hegiht: 24px;
+}
+.lp_submit_area li a:hover {
+    background: rgb(40,180,250);
+}
+.lp_submit_area li a {
+    display: block;
+    color: rgb(255,255,255);
+    background: rgb(0,160,230);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 7px;
+}
+.claer {
+    clear: both;
+}
+.required {
+    float: right;
+    color: rgb(255,0,0);
+    font-weight: bold;
+}
+.kiyaku {
+    width: 100%;
+    height: 180px;
+}
